@@ -14,44 +14,38 @@ export const App = () => {
         e.preventDefault()
     }
 
+    const handleChange = () => {
+        console.info("Worked")
+    }
+
     return (
         <div className="loripsum">
             <HeadTitle
                 titleClassName={"loripsum__title"}
-                content="Tired of boring lorem ipsum?"
-            />
+                titleText="Tired of boring lorem ipsum?"/>
 
             <form onSubmit={handleSubmit} className="loripsum__form">
-                <CounterInput
-                    inputType="number"
-                    labelText="Paragraph:"
-                    min={1}
-                    step={1}
-                />
+                <CounterInput onChange={handleChange} labelText="Paragraphs:"/>
 
                 <Button
                     buttonType="submit"
                     buttonText="Generate"
-                    buttonClassName="loripsum__button"
-                />
+                    buttonClassName="loripsum__button"/>
             </form>
 
             <Output outputClassName="loripsum__output">
-                <Paragraph
-                    paragraphContent="Loripsum fish text fish text more stuff"
-                    paragraphClassName="loripsum__paragraph"
-                />
 
                 <Paragraph
-                    paragraphContent="Loripsum fish text fish text more stuff"
-                    paragraphClassName="loripsum__paragraph"
-                />
+                    paragraphContent="Loriore st fishtupsum fish texLoriore st fishtupsumLoriore st fishtupsumLoriore st fishtupsum text mff"
+                    paragraphClassName="loripsum__paragraph"/>
 
                 <Paragraph
-                    paragraphContent="Loripsum fish text fish text more stuff"
-                    paragraphClassName="loripsum__paragraph"
-                />
+                    paragraphContent="Loripish text more  text more sum fistextsum fistextLoripish fsh tuff"
+                    paragraphClassName="loripsum__paragraph"/>
 
+                <Paragraph
+                    paragraphContent="Loe sturipsum fish text fish text morff"
+                    paragraphClassName="loripsum__paragraph"/>
 
             </Output>
         </div>

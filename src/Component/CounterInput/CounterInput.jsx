@@ -2,16 +2,17 @@ import React from 'react';
 //Styles
 import './CounterInput.scss';
 
-export const CounterInput = ({inputType = "text", min = 1, max = "", step = 1, labelText = "Paragraph:"}) => {
+export const CounterInput = ({labelText = "Paragraph:", onChange, value}) => {
     return (
         <>
             <label className="counter-label" htmlFor="counter-input">{labelText}</label>
             <input className="counter-input"
-                   step={step}
-                   min={min}
-                   max={max}
-                   type={inputType}
+                   max="100"
+                   min="1"
+                   step="1"
+                   type="number"
                    id="counter-input"
+                   onChange={onChange}
             />
         </>
     )

@@ -2,11 +2,11 @@ import React from 'react';
 //Styles
 import './HeadTitle.scss';
 
-export const HeadTitle = ({titleClassName, content}) => {
+export const HeadTitle = ({titleClassName, titleText}) => {
 
     const className = `title ${titleClassName || ""}`
 
     return (
-        <h2 className={className}>{content}</h2>
+        <h2 className={className}>{titleText}</h2>
     )
 }
