@@ -3,14 +3,42 @@ body {
   font-size: 14px;
   line-height: 24px;
   color: #000;
+  background: #E5E5E5;
 }
 
-.app {
+.loripsum {
   padding: 0 10px;
   margin: 80px auto 0;
   max-width: 880px;
   &__title {
     text-align: center;
     color: #063251;
+  }
+  &__form {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 12px;
+    grid-template-columns: min-content 75px;
+
+    margin-top: 31px;
+  }
+  &__button {
+    font-size: 20px;
+    line-height: 14px;
+    color: #FFFFFF;
+
+    background: #49A6E9;
+  }
+  &__output {
+    padding: 32px;
+    min-height: 557px;
+    overflow-y: auto;
+    margin-top: 53px;
+  }
+  &__paragraph {
+    color: #617D98;
+    margin-bottom: 16px;
   }
 }
