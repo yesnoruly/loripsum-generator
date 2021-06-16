@@ -4,7 +4,7 @@ import './CounterInput.scss';
 
 export const CounterInput = ({labelText = "Paragraph:"}) => {
 
-    const [input, setInput] = useState("")
+    const [input, setInput] = useState("1")
 
     return (
         <>
