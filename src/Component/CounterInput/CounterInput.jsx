@@ -1,8 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 //Styles
 import './CounterInput.scss';
 
-export const CounterInput = ({labelText = "Paragraph:", onChange, value}) => {
+export const CounterInput = ({labelText = "Paragraph:"}) => {
+
+    const [input, setInput] = useState("")
+
     return (
         <>
             <label className="counter-label" htmlFor="counter-input">{labelText}</label>
@@ -12,7 +15,8 @@ export const CounterInput = ({labelText = "Paragraph:", onChange, value}) => {
                    step="1"
                    type="number"
                    id="counter-input"
-                   onChange={onChange}
+                   onChange={e => setInput(e.target.value)}
+                   value={input}
             />
         </>
     )
