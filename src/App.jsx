@@ -27,13 +27,10 @@ export const App = () => {
 
 				{data.length > 0 ? //render incoming data
 					data.map((item, index) => {
-						return <Paragraph key={index}
-										  paragraphClassName="loripsum__paragraph"
-										  paragraphContent={item}
-						/>
+						return <Paragraph key={index} paragraphClassName="loripsum__paragraph" paragraphContent={item}/>
 					})
 					:
-					<Empty emptyContent="..."/>
+					<Empty emptyContent="😎"/>
 				}
 
 			</Output>
