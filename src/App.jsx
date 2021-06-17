@@ -6,7 +6,7 @@ import {HeadTitle} from "./Component/HeadTitle/HeadTitle";
 import {Form} from './Component/Form/Form'
 import {Output} from "./Component/Output/Output";
 import {Paragraph} from "./Component/Paragraph/Paragraph";
-import {Empty} from "./Component/helpers/Empty/Empty";
+import {Empty} from "./Component/Empty/Empty";
 //Effector
 import {$loripsum} from './effector';
 import {useStore} from 'effector-react'
