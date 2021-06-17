@@ -3,5 +3,5 @@ import React from 'react';
 import './Empty.scss';
 
 export const Empty = ({emptyContent}) => {
-	return <div className="empty">{emptyContent}</div>
+	return <div className="empty">{emptyContent}</div> //display in the absence of content
 }

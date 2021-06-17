@@ -13,7 +13,7 @@ export const Form = ({onSubmit, }) => {
 
 	const handleSubmit = async (evt) => {
 		evt.preventDefault();
-		await fetchLoripsumDataFx(input)
+		await fetchLoripsumDataFx(input) //when submitting send a request to the API
 	}
 
 	return (

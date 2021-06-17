@@ -13,7 +13,7 @@ import {useStore} from 'effector-react'
 
 export const App = () => {
 
-	const data = useStore($loripsum)
+	const data = useStore($loripsum) //subscribe to our store and return its current value with auto-update
 
 	return (
 		<div className="app loripsum">
@@ -25,14 +25,15 @@ export const App = () => {
 
 			<Output outputClassName="loripsum__output">
 
-				{
-					data.length > 0 ?
-						data.map((item, index) => {
-							return <Paragraph key={index} paragraphClassName="loripsum__paragraph"
-											  paragraphContent={item}/>
-						})
-						:
-						<Empty emptyContent="..."/>
+				{data.length > 0 ? //render incoming data
+					data.map((item, index) => {
+						return <Paragraph key={index}
+										  paragraphClassName="loripsum__paragraph"
+										  paragraphContent={item}
+						/>
+					})
+					:
+					<Empty emptyContent="..."/>
 				}
 
 			</Output>

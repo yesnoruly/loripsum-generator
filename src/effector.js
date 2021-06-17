@@ -1,6 +1,9 @@
-import {createEffect, createStore} from "effector";
+import {
+	createEffect,
+	createStore
+} from "effector";
 
-export const fetchLoripsumDataFx = createEffect(async (num = 1) => {
+export const fetchLoripsumDataFx = createEffect(async (num = 1) => { //create an API request effect
 	const url = `https://mashape-community-skate-ipsum.p.rapidapi.com/${num}/1/JSON`;
 	const options = {
 		"method": "GET",
@@ -14,6 +17,5 @@ export const fetchLoripsumDataFx = createEffect(async (num = 1) => {
 	return req.json()
 })
 
-export const $loripsum = createStore([])
-	.on(fetchLoripsumDataFx.doneData, (_, data) => data)
-
+export const $loripsum = createStore([]) // default state
+	.on(fetchLoripsumDataFx.doneData, (_, data) => data) //the store is updated when data is received
