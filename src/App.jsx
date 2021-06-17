@@ -1,42 +1,27 @@
-import React, {useState} from 'react';
+import React from 'react';
 //Styles
 import './App.scss'
 //Components
 import {HeadTitle} from "./Component/HeadTitle/HeadTitle";
-import {CounterInput} from "./Component/CounterInput/CounterInput";
-import {Button} from "./Component/Button/Button";
+import {Form} from './Component/Form/Form'
 import {Output} from "./Component/Output/Output";
 import {Paragraph} from "./Component/Paragraph/Paragraph";
 import {Empty} from "./Component/helpers/Empty/Empty";
 //Effector
-import {fetchLoripsumDataFx, $loripsum} from './effector';
+import {$loripsum} from './effector';
 import {useStore} from 'effector-react'
 
 export const App = () => {
 
 	const data = useStore($loripsum)
 
-	const [input, setInput] = useState("1")
-
-	const handleSubmit = async (evt) => {
-		evt.preventDefault();
-		await fetchLoripsumDataFx(input)
-	}
-
 	return (
-		<div className="loripsum">
+		<div className="app loripsum">
 			<HeadTitle
 				titleClassName={"loripsum__title"}
 				titleText="Tired of boring lorem ipsum?"/>
 
-			<form onSubmit={handleSubmit} className="loripsum__form">
-				<CounterInput value={input} onChange={e => setInput(e.target.value)} labelText="Paragraphs:"/>
-
-				<Button
-					buttonType="submit"
-					buttonText="Generate"
-					buttonClassName="loripsum__button"/>
-			</form>
+			<Form />
 
 			<Output outputClassName="loripsum__output">
 
@@ -47,7 +32,7 @@ export const App = () => {
 											  paragraphContent={item}/>
 						})
 						:
-						<Empty emptyContent="Empty list"/>
+						<Empty emptyContent="..."/>
 				}
 
 			</Output>
