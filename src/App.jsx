@@ -7,6 +7,7 @@ import {CounterInput} from "./Component/CounterInput/CounterInput";
 import {Button} from "./Component/Button/Button";
 import {Output} from "./Component/Output/Output";
 import {Paragraph} from "./Component/Paragraph/Paragraph";
+import {Empty} from "./Component/helpers/Empty/Empty";
 //Effector
 import {fetchLoripsumDataFx, $loripsum} from './effector';
 import {useStore} from 'effector-react'
@@ -42,9 +43,11 @@ export const App = () => {
 				{
 					data.length > 0 ?
 						data.map((item, index) => {
-							return <Paragraph key={index} paragraphClassName="loripsum__paragraph" paragraphContent={item} />
-						}) :
-							<div>Paraparapam</div>
+							return <Paragraph key={index} paragraphClassName="loripsum__paragraph"
+											  paragraphContent={item}/>
+						})
+						:
+						<Empty emptyContent="Empty list"/>
 				}
 
 			</Output>
