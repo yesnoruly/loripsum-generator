@@ -33,13 +33,19 @@ body {
   }
   &__output {
     padding: 32px;
-    min-height: 557px;
-    overflow-y: auto;
+    height: 557px;
+    overflow-y: scroll;
     margin-top: 53px;
   }
   &__paragraph {
     color: #617D98;
     margin-bottom: 32px;
     text-align: center;
+  }
+  &__empty {
+    color: #617D98;
+    margin-bottom: 32px;
+    text-align: center;
+    font-size: 24px;
   }
 }

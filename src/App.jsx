@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 //Styles
 import './App.scss'
 //Components
@@ -7,43 +7,47 @@ import {CounterInput} from "./Component/CounterInput/CounterInput";
 import {Button} from "./Component/Button/Button";
 import {Output} from "./Component/Output/Output";
 import {Paragraph} from "./Component/Paragraph/Paragraph";
+//Effector
+import {fetchLoripsumDataFx, $loripsum} from './effector';
+import {useStore} from 'effector-react'
 
 export const App = () => {
 
-    const handleSubmit = (e) => {
-        e.preventDefault()
-    }
+	const data = useStore($loripsum)
 
-    return (
-        <div className="loripsum">
-            <HeadTitle
-                titleClassName={"loripsum__title"}
-                titleText="Tired of boring lorem ipsum?"/>
+	const [input, setInput] = useState("1")
 
-            <form onSubmit={handleSubmit} className="loripsum__form">
-                <CounterInput labelText="Paragraphs:"/>
+	const handleSubmit = async (evt) => {
+		evt.preventDefault();
+		await fetchLoripsumDataFx(input)
+	}
 
-                <Button
-                    buttonType="submit"
-                    buttonText="Generate"
-                    buttonClassName="loripsum__button"/>
-            </form>
+	return (
+		<div className="loripsum">
+			<HeadTitle
+				titleClassName={"loripsum__title"}
+				titleText="Tired of boring lorem ipsum?"/>
 
-            <Output outputClassName="loripsum__output">
+			<form onSubmit={handleSubmit} className="loripsum__form">
+				<CounterInput value={input} onChange={e => setInput(e.target.value)} labelText="Paragraphs:"/>
 
-                <Paragraph
-                    paragraphContent="Loriore st fishtupsum fish texLoriore st fishtupsumLoriore st fishtupsumLoriore st fishtupsum text mff"
-                    paragraphClassName="loripsum__paragraph"/>
+				<Button
+					buttonType="submit"
+					buttonText="Generate"
+					buttonClassName="loripsum__button"/>
+			</form>
 
-                <Paragraph
-                    paragraphContent="Loripish text more  text more sum fistextsum fistextLoripish fsh tuff"
-                    paragraphClassName="loripsum__paragraph"/>
+			<Output outputClassName="loripsum__output">
 
-                <Paragraph
-                    paragraphContent="Loe sturipsum fish text fish text morff"
-                    paragraphClassName="loripsum__paragraph"/>
+				{
+					data.length > 0 ?
+						data.map((item, index) => {
+							return <Paragraph key={index} paragraphClassName="loripsum__paragraph" paragraphContent={item} />
+						}) :
+							<div>Paraparapam</div>
+				}
 
-            </Output>
-        </div>
-    )
+			</Output>
+		</div>
+	)
 }

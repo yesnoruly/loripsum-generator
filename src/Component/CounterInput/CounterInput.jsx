@@ -2,9 +2,7 @@ import React, {useState} from 'react';
 //Styles
 import './CounterInput.scss';
 
-export const CounterInput = ({labelText = "Paragraph:"}) => {
-
-    const [input, setInput] = useState("1")
+export const CounterInput = ({labelText = "Paragraph:", value, onChange}) => {
 
     return (
         <>
@@ -15,8 +13,8 @@ export const CounterInput = ({labelText = "Paragraph:"}) => {
                    step="1"
                    type="number"
                    id="counter-input"
-                   onChange={e => setInput(e.target.value)}
-                   value={input}
+                   onChange={onChange}
+                   value={value}
             />
         </>
     )
