@@ -13,7 +13,8 @@ import {useStore} from 'effector-react'
 
 export const App = () => {
 
-	const data = useStore($loripsum) //subscribe to our store and return its current value with auto-update
+	//subscribe to our store for communication with react
+	const data = useStore($loripsum)
 
 	return (
 		<div className="app loripsum">
