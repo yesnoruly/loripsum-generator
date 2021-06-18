@@ -4,7 +4,7 @@ import {
 } from "effector";
 
 export const fetchLoripsumDataFx = createEffect(async (num = 1) => { //create an API request effect
-	const url = `https://mashape-community-skate-ipsum.p.rapidapi.com/${num}/1/JSON`;
+	const url = `https://mashape-community-skate-ipsum.p.rapidapi.com/${num}/0/JSON`;
 	const options = {
 		"method": "GET",
 		"headers": {
@@ -13,7 +13,8 @@ export const fetchLoripsumDataFx = createEffect(async (num = 1) => { //create an
 		}
 	}
 
-	const req = await fetch(url, options).catch(err => console.log(err))
+	const req = await fetch(url, options)
+		.catch(err => console.log(err))
 	return req.json()
 })
 
