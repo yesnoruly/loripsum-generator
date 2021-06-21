@@ -3,4 +3,7 @@
   font-size: 28px;
   line-height: 33px;
   text-transform: uppercase;
+  @media (max-width: 550px) {
+    font-size: 25px;
+  }
 }
