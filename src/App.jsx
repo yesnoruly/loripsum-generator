@@ -19,16 +19,16 @@ export const App = () => {
 	return (
 		<div className="app loripsum">
 			<HeadTitle
-				titleClassName={"loripsum__title"}
+				className={"loripsum__title"}
 				titleText="Tired of boring lorem ipsum?"/>
 
 			<Form />
 
-			<Output outputClassName="loripsum__output">
+			<Output className="loripsum__output">
 
 				{data.length > 0 ? //render incoming data
 					data.map((item, index) => {
-						return <Paragraph key={index} paragraphClassName="loripsum__paragraph" paragraphContent={item}/>
+						return <Paragraph key={index} className="loripsum__paragraph" paragraphContent={item}/>
 					})
 					:
 					<Empty emptyContent="😎"/>

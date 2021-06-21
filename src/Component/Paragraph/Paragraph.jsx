@@ -2,11 +2,9 @@ import React from 'react';
 //Styles
 import './Paragraph.scss';
 
-export const Paragraph = ({paragraphContent, paragraphClassName}) => {
-
-    const className = `paragraph ${paragraphClassName || ""}`
+export const Paragraph = ({className, paragraphContent}) => {
 
     return (
-        <p className={className}>{paragraphContent}</p>
+        <p className={`paragraph ${className || ""}`}>{paragraphContent}</p>
     )
 }

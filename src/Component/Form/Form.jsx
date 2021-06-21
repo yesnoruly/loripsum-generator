@@ -4,10 +4,11 @@ import {CounterInput} from "../CounterInput/CounterInput";
 import {Button} from "../Button/Button";
 //Styles
 import './Form.scss';
+import '../../App.scss';
 //Effector
 import {fetchLoripsumDataFx} from "../../effector";
 
-export const Form = ({onSubmit, }) => {
+export const Form = ({}) => {
 
 	const [input, setInput] = useState("1")
 
@@ -17,13 +18,13 @@ export const Form = ({onSubmit, }) => {
 	}
 
 	return (
-		<form onSubmit={handleSubmit} className="form">
+		<form onSubmit={handleSubmit} className="form loripsum__form">
 			<CounterInput value={input} onChange={e => setInput(e.target.value)} labelText="Paragraphs:"/>
 
 			<Button
 				buttonType="submit"
 				buttonText="Generate"
-				buttonClassName="loripsum__button"/>
+				className="loripsum__button"/>
 		</form>
 	)
 }

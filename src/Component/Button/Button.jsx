@@ -2,11 +2,9 @@ import React from 'react';
 //Styles
 import './Button.scss';
 
-export const Button = ({buttonType, buttonClassName, buttonText="Button"}) => {
-
-    const className = `generate ${buttonClassName || ""}`
+export const Button = ({className, buttonType, buttonText="Button"}) => {
 
     return (
-        <button className={className} type={buttonType}>{buttonText}</button>
+        <button className={`generate ${className || ""}`} type={buttonType}>{buttonText}</button>
     )
 }
