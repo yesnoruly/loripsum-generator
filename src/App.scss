@@ -42,10 +42,19 @@
     height: 557px;
     overflow-y: auto;
     margin-top: 53px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   &__paragraph {
     color: var(--main-text-color);
     margin-bottom: 32px;
     text-align: center;
+  }
+  &__loader {
+    border: 5px solid #000;
+    border-bottom-color: var(--button-bgcolor);
+    display: inline-flex;
+    justify-content: center;
   }
 }
