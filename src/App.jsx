@@ -9,13 +9,14 @@ import {Paragraph} from "./Component/Paragraph/Paragraph";
 import {Empty} from "./Component/Empty/Empty";
 import {Loader} from "./Component/Loader/Loader";
 //Effector
-import {$loripsum} from './effector';
+import {$loripsum, fetchLoripsumDataFx} from './effector';
 import {useStore} from 'effector-react'
 
 export const App = () => {
 
 	//subscribe to our store for communication with react
 	const data = useStore($loripsum)
+	const isLoading = useStore(fetchLoripsumDataFx.pending)
 
 	return (
 		<div className="app loripsum">
@@ -23,20 +24,26 @@ export const App = () => {
 				className={"loripsum__title"}
 				titleText="Tired of boring lorem ipsum?"/>
 
-			<Form />
+			<Form/>
 
 			<Output className="loripsum__output">
 
-				{data.length > 0 ? //render incoming data
-					data.map((item, index) => {
-						return <Paragraph key={index} className="loripsum__paragraph" paragraphContent={item}/>
-					})
-					:
-					<Empty emptyContent="😎"/>
+				{
+					!isLoading ?
+						(
+							data.length > 0 ? //render incoming data
+								data.map((item, index) => {
+									return <Paragraph key={index} className="loripsum__paragraph"
+													  paragraphContent={item}/>
+								})
+								:
+								<Empty emptyContent="😎"/>
+						)
+						:
+						<Loader className="loripsum__loader"/>
 				}
 
 			</Output>
-			<Loader />
 		</div>
 	)
 }
