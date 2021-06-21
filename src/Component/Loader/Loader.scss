@@ -1,0 +1,19 @@
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #000;
+  border-bottom-color: var(--button-bgcolor);
+  border-radius: 50%;
+  display: inline-block;
+  animation: rotation 1s linear infinite;
+  transition: .5s ease;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

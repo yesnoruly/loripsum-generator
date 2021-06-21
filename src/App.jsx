@@ -7,6 +7,7 @@ import {Form} from './Component/Form/Form'
 import {Output} from "./Component/Output/Output";
 import {Paragraph} from "./Component/Paragraph/Paragraph";
 import {Empty} from "./Component/Empty/Empty";
+import {Loader} from "./Component/Loader/Loader";
 //Effector
 import {$loripsum} from './effector';
 import {useStore} from 'effector-react'
@@ -35,6 +36,7 @@ export const App = () => {
 				}
 
 			</Output>
+			<Loader />
 		</div>
 	)
 }
