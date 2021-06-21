@@ -8,7 +8,7 @@ export const CounterInput = ({labelText = "Paragraph:", value, onChange}) => {
         <>
             <label className="counter-label" htmlFor="counter-input">{labelText}</label>
             <input className="counter-input"
-                   max="100"
+                   max="999"
                    min="1"
                    step="1"
                    type="number"
