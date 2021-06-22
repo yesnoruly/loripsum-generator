@@ -12,3 +12,13 @@
     grid-template-columns: 1fr;
   }
 }
+
+//
+.loripsum__form {
+  label {
+    color: var(--title-color);
+  }
+  input {
+    color: var(--title-color)
+  }
+}

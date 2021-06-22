@@ -4,7 +4,6 @@
   --button-bgcolor: #49A6E9;
   --button-bgcolor-hover: #5DBAE9;
   --button-bgcolor-active: #2481C4;
-  --button-bgcolor-disable: #B8B8B8, 90%;
 }
 
 .loripsum {
@@ -13,56 +12,6 @@
   max-width: 880px;
   @media (max-width: 550px) {
     margin-top: 30px;
-  }
-  &__title {
-    text-align: center;
-    color: var(--title-color);
-
-  }
-  &__button {
-    font-size: 20px;
-    line-height: 14px;
-    color: #FFFFFF;
-
-    background: var(--button-bgcolor);
-    transition: background .2s ease;
-    &:hover {
-      background: var(--button-bgcolor-hover)
-    }
-    &:active {
-      background: var(--button-bgcolor-active);
-    }
-  }
-  &__form {
-    label {
-      color: var(--title-color);
-    }
-    input {
-      color: var(--title-color)
-    }
-  }
-  &__output {
-    padding: 32px;
-    height: 557px;
-    overflow-y: auto;
-    margin-top: 53px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    @media (max-width: 666px) {
-      height: 400px;
-    }
-  }
-  &__paragraph {
-    color: var(--main-text-color);
-    margin-bottom: 32px;
-    text-align: center;
-  }
-  &__loader {
-    border: 5px solid #000;
-    border-bottom-color: var(--button-bgcolor);
-    display: inline-flex;
-    justify-content: center;
   }
 }
 

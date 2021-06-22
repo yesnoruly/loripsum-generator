@@ -3,3 +3,17 @@
   box-shadow: 4px 4px 23px -3px rgba(0, 0, 0, 0.16);
   border-radius: 4px;
 }
+
+//
+.loripsum__output {
+  padding: 32px;
+  height: 557px;
+  overflow-y: auto;
+  margin-top: 53px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (max-width: 666px) {
+    height: 400px;
+  }
+}
