@@ -8,6 +8,7 @@ import {Output} from "./Component/Output/Output";
 import {Paragraph} from "./Component/Paragraph/Paragraph";
 import {Empty} from "./Component/Empty/Empty";
 import {Loader} from "./Component/Loader/Loader";
+import {CopyToClipboard} from './Component/CopyToClipboard/CopyToClipboard'
 //Effector
 import {$loripsum, fetchLoripsumDataFx} from './effector';
 import {useStore} from 'effector-react'
@@ -26,21 +27,24 @@ export const App = () => {
 
 			<Form/>
 
+			<CopyToClipboard/>
+
 			<Output className="loripsum__output">
 
 				{
-					!isLoading ?
+					isLoading ?
+						<Loader className="loripsum__loader"/>
+						:
 						(
-							data.length > 0 ? //render incoming data
+							data.length > 0 ?
 								data.map((item, index) => {
-									return <Paragraph key={index} className="loripsum__paragraph"
+									return <Paragraph key={index}
+													  className="loripsum__paragraph"
 													  paragraphContent={item}/>
 								})
 								:
 								<Empty emptyContent="😎"/>
 						)
-						:
-						<Loader className="loripsum__loader"/>
 				}
 
 			</Output>
