@@ -15,8 +15,7 @@ import {useStore} from 'effector-react'
 
 export const App = () => {
 
-	//subscribe to our store for communication with react
-	const data = useStore($loripsum)
+	const loripsum = useStore($loripsum)
 	const isLoading = useStore(fetchLoripsumDataFx.pending)
 	const joinedLoripsum = useStore($joinedLoripsum)
 
@@ -30,15 +29,15 @@ export const App = () => {
 
 			<Output className="loripsum__output">
 
-				<CopyToClipboard handleClick={() => navigator.clipboard.writeText(joinedLoripsum)}/>
+				<CopyToClipboard deps={fetchLoripsumDataFx} data={joinedLoripsum}/>
 
 				{
 					isLoading ?
 						<Loader className="loripsum__loader"/>
 						:
 						(
-							data.length > 0 ?
-								data.map((item, index) => {
+							loripsum.length > 0 ?
+								loripsum.map((item, index) => {
 									return <Paragraph key={index}
 													  className="loripsum__paragraph"
 													  paragraphContent={item}/>
