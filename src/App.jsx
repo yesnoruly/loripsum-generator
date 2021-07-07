@@ -55,9 +55,7 @@ export const App = () => {
 						(
 							loripsum.length > 0 ?
 								loripsum.map((item, index) => {
-									return <Paragraph key={index}
-													  className="loripsum__paragraph"
-													  paragraphContent={item}/>
+									return <p className="paragraph loripsum__paragraph">{item}</p>
 								})
 								:
 								<p className="empty">😎</p>

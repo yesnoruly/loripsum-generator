@@ -32,6 +32,15 @@
       background: var(--color-blue-dark);
     }
   }
+
+  &__paragraph {
+    color: var(--color-blue-dark);
+    margin-bottom: 32px;
+    text-align: center;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 /* Title */
@@ -105,4 +114,11 @@
   text-align: center;
   font-size: 50px;
   line-height: 30px;
+}
+
+/* Paragraph */
+
+.paragraph {
+  font-size: 20px;
+  line-height: 24px;
 }
