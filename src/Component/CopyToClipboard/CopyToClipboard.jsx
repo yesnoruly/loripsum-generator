@@ -10,8 +10,8 @@ export const CopyToClipboard = ({data, deps}) => {
 	const [active, setActive] = useState(false)
 
 	const handleClick = () => {
-		navigator.clipboard.writeText(data)
 		setActive(true)
+		navigator.clipboard.writeText(data)
 	}
 
 	useEffect(() => {
