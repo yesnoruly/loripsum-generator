@@ -10,7 +10,6 @@ import {CopyToClipboard} from './Component/CopyToClipboard/CopyToClipboard'
 //Effector
 import {$loripsum, fetchLoripsumDataFx, $joinedLoripsum} from './effector';
 import {useStore} from 'effector-react'
-import {CounterInput} from "./Component/CounterInput/CounterInput";
 
 export const App = () => {
 
@@ -31,7 +30,17 @@ export const App = () => {
 			<h2 className="title loripsum__title">Tired of boring lorem ipsum?</h2>
 
 			<form onSubmit={handleSubmit} className="form loripsum__form">
-				<CounterInput value={input} onChange={e => setInput(e.target.value)} labelText="Paragraphs:"/>
+
+				<label className="counter-label" htmlFor="counter-input">Paragraphs:</label>
+				<input className="counter-input"
+					   max="999"
+					   min="1"
+					   step="1"
+					   type="number"
+					   id="counter-input"
+					   onChange={e => setInput(e.target.value)}
+					   value={input}
+				/>
 
 				<button className="generate loripsum__button" type="submit">Generate</button>
 			</form>
