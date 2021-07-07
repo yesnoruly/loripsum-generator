@@ -3,11 +3,11 @@ import React, {useState} from 'react';
 import './App.scss'
 //Components
 import {Output} from "./Component/Output/Output";
-import {Paragraph} from "./Component/Paragraph/Paragraph";
 import {Loader} from "./Component/Loader/Loader";
 import {CopyToClipboard} from './Component/CopyToClipboard/CopyToClipboard'
 //Effector
-import {$loripsum, fetchLoripsumDataFx, $joinedLoripsum} from './effector';
+import {fetchLoripsumDataFx} from './effector/effect'
+import {$loripsum, $joinedLoripsum} from './effector/store'
 import {useStore} from 'effector-react'
 
 export const App = () => {
