@@ -11,7 +11,6 @@ import {CopyToClipboard} from './Component/CopyToClipboard/CopyToClipboard'
 import {$loripsum, fetchLoripsumDataFx, $joinedLoripsum} from './effector';
 import {useStore} from 'effector-react'
 import {CounterInput} from "./Component/CounterInput/CounterInput";
-import {Button} from "./Component/Button/Button";
 
 export const App = () => {
 
@@ -34,10 +33,7 @@ export const App = () => {
 			<form onSubmit={handleSubmit} className="form loripsum__form">
 				<CounterInput value={input} onChange={e => setInput(e.target.value)} labelText="Paragraphs:"/>
 
-				<Button
-					buttonType="submit"
-					buttonText="Generate"
-					className="loripsum__button"/>
+				<button className="generate loripsum__button" type="submit">Generate</button>
 			</form>
 
 			<Output className="loripsum__output">

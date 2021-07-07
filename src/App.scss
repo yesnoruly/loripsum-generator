@@ -1,3 +1,37 @@
+.loripsum {
+  padding: 80px 10px 0;
+  margin: 0 auto;
+  max-width: 880px;
+  @media (max-width: 550px) {
+    padding-top: 30px;
+  }
+
+  &__title {
+    text-align: center;
+    color: var(--color-blue-darker);
+  }
+
+  &__form input,
+  &__form label{
+    color: var(--color-blue-darker);
+  }
+
+  &__button {
+    font-size: 20px;
+    line-height: 14px;
+    color: #FFFFFF;
+
+    background: var(--color-blue-medium);
+    transition: background .2s ease;
+    &:hover {
+      background: var(--color-blue-lightest)
+    }
+    &:active {
+      background: var(--color-blue-dark);
+    }
+  }
+}
+
 .title {
   font-weight: bold;
   font-size: 28px;
@@ -23,19 +57,11 @@
   }
 }
 
-.loripsum {
-  padding: 80px 10px 0;
-  margin: 0 auto;
-  max-width: 880px;
-  @media (max-width: 550px) {
-    padding-top: 30px;
-  }
-  &__title {
-    text-align: center;
-    color: var(--color-blue-darker);
-  }
-  &__form input,
-  &__form label{
-    color: var(--color-blue-darker);
-  }
+.generate {
+  display: inline-block;
+  min-width: 110px;
+  min-height: 35px;
+  padding: 10px;
+
+  border-radius: 4px;
 }
