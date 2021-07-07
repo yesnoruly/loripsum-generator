@@ -2,7 +2,6 @@ import React from 'react';
 //Styles
 import './App.scss'
 //Components
-import {HeadTitle} from "./Component/HeadTitle/HeadTitle";
 import {Form} from './Component/Form/Form'
 import {Output} from "./Component/Output/Output";
 import {Paragraph} from "./Component/Paragraph/Paragraph";
@@ -21,9 +20,8 @@ export const App = () => {
 
 	return (
 		<div className="app loripsum">
-			<HeadTitle
-				className={"loripsum__title"}
-				titleText="Tired of boring lorem ipsum?"/>
+
+			<h2 className="title loripsum__title">Tired of boring lorem ipsum?</h2>
 
 			<Form/>
 
