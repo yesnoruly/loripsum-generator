@@ -1,7 +1,4 @@
-import {
-	createEffect,
-	createStore
-} from "effector";
+import {createEffect} from "effector";
 
 export const fetchLoripsumDataFx = createEffect((num = 1) => {
 	const url = `https://mashape-community-skate-ipsum.p.rapidapi.com/${num}/0/JSON`;
@@ -17,8 +14,3 @@ export const fetchLoripsumDataFx = createEffect((num = 1) => {
 		.then(req => req.json())
 		.catch(err => console.log(err))
 })
-
-export const $loripsum = createStore([])
-	.on(fetchLoripsumDataFx.doneData, (_, data) => data)
-
-export const $joinedLoripsum = $loripsum.map(arr => arr.join(" "))
