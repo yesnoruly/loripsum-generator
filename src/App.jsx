@@ -4,7 +4,6 @@ import './App.scss'
 //Components
 import {Output} from "./Component/Output/Output";
 import {Paragraph} from "./Component/Paragraph/Paragraph";
-import {Empty} from "./Component/Empty/Empty";
 import {Loader} from "./Component/Loader/Loader";
 import {CopyToClipboard} from './Component/CopyToClipboard/CopyToClipboard'
 //Effector
@@ -33,8 +32,8 @@ export const App = () => {
 
 				<label className="counter-label" htmlFor="counter-input">Paragraphs:</label>
 				<input className="counter-input"
-					   max="999"
 					   min="1"
+					   max="999"
 					   step="1"
 					   type="number"
 					   id="counter-input"
@@ -61,8 +60,8 @@ export const App = () => {
 													  paragraphContent={item}/>
 								})
 								:
-								<Empty emptyContent="😎"/>
-						)
+								<p className="empty">😎</p>
+					)
 				}
 
 			</Output>

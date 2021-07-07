@@ -1,3 +1,5 @@
+/* App styles */
+
 .loripsum {
   padding: 80px 10px 0;
   margin: 0 auto;
@@ -32,6 +34,8 @@
   }
 }
 
+/* Title */
+
 .title {
   font-weight: bold;
   font-size: 28px;
@@ -42,6 +46,8 @@
     font-size: 25px;
   }
 }
+
+/* Form */
 
 .form {
   display: grid;
@@ -59,6 +65,8 @@
   }
 }
 
+/* Button */
+
 .generate {
   display: inline-block;
   min-width: 110px;
@@ -67,6 +75,8 @@
 
   border-radius: 4px;
 }
+
+/* Counter input */
 
 .counter-label {
   font-size: 20px;
@@ -86,4 +96,13 @@
 
   border-radius: 4px;
   padding: 0 5px;
+}
+
+/* Empty */
+
+.empty {
+  color: #617D98;
+  text-align: center;
+  font-size: 50px;
+  line-height: 30px;
 }
