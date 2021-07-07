@@ -10,7 +10,7 @@ import {Empty} from "./Component/Empty/Empty";
 import {Loader} from "./Component/Loader/Loader";
 import {CopyToClipboard} from './Component/CopyToClipboard/CopyToClipboard'
 //Effector
-import {$loripsum, fetchLoripsumDataFx} from './effector';
+import {$loripsum, fetchLoripsumDataFx, $joinedLoripsum} from './effector';
 import {useStore} from 'effector-react'
 
 export const App = () => {
@@ -18,6 +18,7 @@ export const App = () => {
 	//subscribe to our store for communication with react
 	const data = useStore($loripsum)
 	const isLoading = useStore(fetchLoripsumDataFx.pending)
+	const joinedLoripsum = useStore($joinedLoripsum)
 
 	return (
 		<div className="app loripsum">
@@ -29,7 +30,7 @@ export const App = () => {
 
 			<Output className="loripsum__output">
 
-				<CopyToClipboard/>
+				<CopyToClipboard handleClick={() => navigator.clipboard.writeText(joinedLoripsum)}/>
 
 				{
 					isLoading ?

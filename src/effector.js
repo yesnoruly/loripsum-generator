@@ -20,3 +20,5 @@ export const fetchLoripsumDataFx = createEffect((num = 1) => { //create an API r
 
 export const $loripsum = createStore([]) // default state
 	.on(fetchLoripsumDataFx.doneData, (_, data) => data) //the store is updated when data is received
+
+export const $joinedLoripsum = $loripsum.map(arr => arr.join(" "))
