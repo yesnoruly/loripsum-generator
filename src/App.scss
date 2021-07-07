@@ -1,11 +1,3 @@
-:root {
-  --title-color: #063251;
-  --main-text-color: #617D98;
-  --button-bgcolor: #49A6E9;
-  --button-bgcolor-hover: #5DBAE9;
-  --button-bgcolor-active: #2481C4;
-}
-
 .title {
   font-weight: bold;
   font-size: 28px;
@@ -40,14 +32,10 @@
   }
   &__title {
     text-align: center;
-    color: var(--title-color);
+    color: var(--color-blue-darker);
   }
-  &__form {
-    label {
-      color: var(--title-color);
-    }
-    input {
-      color: var(--title-color)
-    }
+  &__form input,
+  &__form label{
+    color: var(--color-blue-darker);
   }
 }
