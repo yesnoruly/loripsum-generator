@@ -27,9 +27,9 @@ export const App = () => {
 
 			<Form/>
 
-			<CopyToClipboard/>
-
 			<Output className="loripsum__output">
+
+				<CopyToClipboard/>
 
 				{
 					isLoading ?
