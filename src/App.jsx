@@ -42,7 +42,7 @@ export const App = () => {
 
 			<Output className="loripsum__output">
 
-				<CopyToClipboard deps={fetchLoripsumDataFx} data={joinedLoripsum}/>
+				<CopyToClipboard data={joinedLoripsum}/>
 
 				{
 					isLoading ?
