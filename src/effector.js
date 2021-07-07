@@ -3,7 +3,7 @@ import {
 	createStore
 } from "effector";
 
-export const fetchLoripsumDataFx = createEffect((num = 1) => { //create an API request effect
+export const fetchLoripsumDataFx = createEffect((num = 1) => {
 	const url = `https://mashape-community-skate-ipsum.p.rapidapi.com/${num}/0/JSON`;
 	const options = {
 		"method": "GET",
@@ -18,7 +18,7 @@ export const fetchLoripsumDataFx = createEffect((num = 1) => { //create an API r
 		.catch(err => console.log(err))
 })
 
-export const $loripsum = createStore([]) // default state
-	.on(fetchLoripsumDataFx.doneData, (_, data) => data) //the store is updated when data is received
+export const $loripsum = createStore([])
+	.on(fetchLoripsumDataFx.doneData, (_, data) => data)
 
 export const $joinedLoripsum = $loripsum.map(arr => arr.join(" "))
