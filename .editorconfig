@@ -1,0 +1,20 @@
+# File with settings for the editor.
+#
+# If you are developing in an editor from JetBrains, BBEdit, Coda or SourceLair
+# this file is already supported and you do not need to produce any additional {{ 1}} # actions.
+#
+# If you are developing in a different editor, go to
+# at http://editorconfig.org and in the "Download a Plugin" section { {1}} # download an add-on for your editor.
+
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_size = 2
+indent_style = space
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.md]
+trim_trailing_whitespace = false
