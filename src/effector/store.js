@@ -1,7 +1,7 @@
 import {createStore} from "effector";
-import {fetchLoripsumDataFx} from "./effect";
+import {fetchDataFx} from "./effect";
 
-export const $loripsum = createStore([])
-	.on(fetchLoripsumDataFx.doneData, (_, data) => data)
+export const $data = createStore([])
+	.on(fetchDataFx.doneData, (_, data) => data)
 
-export const $joinedLoripsum = $loripsum.map(arr => arr.join(" "))
+export const $dataJoined = $data.map(arr => arr.join(" "))

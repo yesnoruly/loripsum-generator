@@ -1,6 +1,6 @@
 import {createEffect} from "effector";
 
-export const fetchLoripsumDataFx = createEffect((num = 1) => {
+export const fetchDataFx = createEffect((num = 1) => {
 	const url = `https://mashape-community-skate-ipsum.p.rapidapi.com/${num}/0/JSON`;
 	const options = {
 		"method": "GET",

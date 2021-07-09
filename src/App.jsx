@@ -6,21 +6,21 @@ import {Output} from "./Component/Output/Output";
 import {Loader} from "./Component/Loader/Loader";
 import {CopyToClipboard} from './Component/CopyToClipboard/CopyToClipboard'
 //Effector
-import {fetchLoripsumDataFx} from './effector/effect'
-import {$loripsum, $joinedLoripsum} from './effector/store'
+import {fetchDataFx} from './effector/effect'
+import {$data, $dataJoined} from './effector/store'
 import {useStore} from 'effector-react'
 
 export const App = () => {
 
-	const loripsum = useStore($loripsum)
-	const isLoading = useStore(fetchLoripsumDataFx.pending)
-	const joinedLoripsum = useStore($joinedLoripsum)
+	const data = useStore($data)
+	const isLoading = useStore(fetchDataFx.pending)
+	const dataJoined = useStore($dataJoined)
 
 	const [input, setInput] = useState("1")
 
 	const handleSubmit = (evt) => {
 		evt.preventDefault();
-		fetchLoripsumDataFx(input);
+		fetchDataFx(input);
 	}
 
 	return (
@@ -46,16 +46,16 @@ export const App = () => {
 
 			<Output className="loripsum__output">
 
-				<CopyToClipboard data={joinedLoripsum}/>
+				<CopyToClipboard data={dataJoined}/>
 
 				{
 					isLoading ?
 						<Loader className="loripsum__loader"/>
 						:
 						(
-							loripsum.length > 0 ?
-								loripsum.map((item, index) => {
-									return <p className="paragraph loripsum__paragraph">{item}</p>
+							data.length > 0 ?
+								data.map((item, index) => {
+									return <p key={index} className="paragraph loripsum__paragraph">{item}</p>
 								})
 								:
 								<p className="empty">😎</p>
