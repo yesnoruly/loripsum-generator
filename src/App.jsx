@@ -2,9 +2,9 @@ import React, {useState} from 'react';
 //Styles
 import './App.scss'
 //Components
-import {Output} from "./Component/Output/Output";
-import {Loader} from "./Component/Loader/Loader";
-import {CopyToClipboard} from './Component/CopyToClipboard/CopyToClipboard'
+import {Output} from "./Components/Output/Output";
+import {Loader} from "./Components/Loader/Loader";
+import {CopyToClipboard} from './Components/CopyToClipboard/CopyToClipboard'
 //Effector
 import {fetchDataFx} from './effector/effect'
 import {$data, $dataJoined} from './effector/store'
