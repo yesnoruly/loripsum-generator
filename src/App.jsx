@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 //Styles
 import './App.scss'
 //Components
-import {Output} from "./Components/Output/Output";
 import {Loader} from "./Components/Loader/Loader";
 import {CopyToClipboard} from './Components/CopyToClipboard/CopyToClipboard'
 //Effector
@@ -44,7 +43,7 @@ export const App = () => {
 				<button className="generate loripsum__button" type="submit">Generate</button>
 			</form>
 
-			<Output className="loripsum__output">
+			<section className="output loripsum__output">
 
 				<CopyToClipboard data={dataJoined}/>
 
@@ -62,7 +61,7 @@ export const App = () => {
 					)
 				}
 
-			</Output>
+			</section>
 		</div>
 	)
 }

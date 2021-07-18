@@ -41,6 +41,24 @@
       margin-bottom: 0;
     }
   }
+
+  &__output {
+    padding: 37px;
+    margin-top: 24px;
+    height: 550px;
+    overflow-y: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+    @media (max-width: 666px) {
+      height: 400px;
+      margin-top: 15px;
+      padding: 20px;
+    }
+  }
 }
 
 /* Title */
@@ -121,4 +139,12 @@
 .paragraph {
   font-size: 20px;
   line-height: 24px;
+}
+
+/* Output */
+
+.output {
+  background: #FFFFFF;
+  box-shadow: 4px 4px 23px -3px rgba(0, 0, 0, 0.16);
+  border-radius: 4px;
 }
