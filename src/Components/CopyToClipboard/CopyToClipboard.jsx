@@ -12,7 +12,7 @@ export const CopyToClipboard = ({data}) => {
 
 	return (
 		<button onClick={handleClick} className="copytocb">
-			<img src={copy} alt="to clipboard"/>
+			<img src={copy} alt="Copy to clipboard"/>
 		</button>
 	)
 }
