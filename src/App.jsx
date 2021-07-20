@@ -5,8 +5,7 @@ import './App.scss'
 import {Loader} from "./Components/Loader/Loader";
 import {CopyToClipboard} from './Components/CopyToClipboard/CopyToClipboard'
 //Effector
-import {fetchDataFx} from './effector/effect'
-import {$data, $dataJoined} from './effector/store'
+import {fetchDataFx, $data, $dataJoined} from './effector'
 import {useStore} from 'effector-react'
 
 export const App = () => {
@@ -58,7 +57,7 @@ export const App = () => {
 								})
 								:
 								<p className="empty">😎</p>
-					)
+                        )
 				}
 
 			</section>
