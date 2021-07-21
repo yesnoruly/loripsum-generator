@@ -1,6 +1,6 @@
 import {createEffect, createStore} from "effector";
 
-export const fetchDataFx = createEffect((num = 1) => {
+export const getTextContentFx = createEffect((num = 1) => {
     const url = `https://mashape-community-skate-ipsum.p.rapidapi.com/${num}/0/JSON`;
     const options = {
         "method": "GET",
@@ -15,7 +15,7 @@ export const fetchDataFx = createEffect((num = 1) => {
         .catch(err => console.log(err))
 })
 
-export const $data = createStore([])
-    .on(fetchDataFx.doneData, (_, data) => data)
+export const $textContent = createStore([])
+    .on(getTextContentFx.doneData, (_, data) => data)
 
-export const $dataJoined = $data.map(arr => arr.join(" "))
+export const $textContentJoined = $textContent.map(arr => arr.join(" "))
