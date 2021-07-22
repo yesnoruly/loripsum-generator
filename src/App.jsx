@@ -4,7 +4,7 @@ import './App.scss'
 //Components
 import {Loader} from './Components/Loader/Loader';
 import {CopyToClipboard} from './Components/CopyToClipboard/CopyToClipboard';
-import {InputTNumber} from './Components/InputTNumber/InputTNumber'
+import {InputTNumber} from './Components/InputTNumber'
 //Effector
 import {getTextContentFx, $textContent, $textContentJoined} from './effector'
 import {useStore} from 'effector-react'
@@ -34,6 +34,8 @@ export const App = () => {
                               onChange={e => setInput(e.target.value)}
                               min={1}
                               max={999}
+
+                              color="var(--color-blue-darker)"
                 />
 
                 <button className="generate loripsum__button" type="submit">Generate</button>
