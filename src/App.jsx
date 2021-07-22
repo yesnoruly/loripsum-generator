@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 //Styles
 import './App.scss'
 //Components
-import {Loader} from './Components/Loader/Loader';
+import {Loader} from './Components/Loader';
 import {CopyToClipboard} from './Components/CopyToClipboard/CopyToClipboard';
 import {InputTNumber} from './Components/InputTNumber'
 //Effector
@@ -47,7 +47,7 @@ export const App = () => {
 
                 {
                     isLoading ?
-                        <Loader className="loripsum__loader"/>
+                        <Loader centering width="5px" color="var(--color-blue-light)" />
                         :
                         (
                             data.length > 0 ?
