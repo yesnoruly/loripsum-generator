@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 import './App.scss'
 //Components
 import {Loader} from './Components/Loader';
-import {CopyToClipboard} from './Components/CopyToClipboard/CopyToClipboard';
+import {CopyToClipboard} from './Components/CopyToClipboard';
 import {InputTNumber} from './Components/InputTNumber'
 //Effector
 import {getTextContentFx, $textContent, $textContentJoined} from './effector'
