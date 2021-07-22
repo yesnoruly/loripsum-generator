@@ -8,11 +8,6 @@
     padding-top: 30px;
   }
 
-  &__title {
-    text-align: center;
-    color: var(--color-blue-darker);
-  }
-
   &__button {
     font-size: 20px;
     line-height: 14px;
@@ -59,19 +54,6 @@
   }
 }
 
-/* Title */
-
-.title {
-  font-weight: bold;
-  font-size: 28px;
-  line-height: 33px;
-  text-transform: uppercase;
-
-  @media (max-width: 550px) {
-    font-size: 25px;
-  }
-}
-
 /* Form */
 
 .form {
@@ -86,17 +68,6 @@
   @media (max-width: 362px) {
     grid-auto-flow: row;
   }
-}
-
-/* Button */
-
-.generate {
-  display: inline-block;
-  min-width: 110px;
-  min-height: 35px;
-  padding: 10px;
-
-  border-radius: 4px;
 }
 
 /* Empty */
