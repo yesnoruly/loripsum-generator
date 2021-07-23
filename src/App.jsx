@@ -4,7 +4,9 @@ import './App.scss'
 //Components
 import {Loader} from './Components/Loader';
 import {CopyToClipboard} from './Components/CopyToClipboard';
-import {InputTNumber} from './Components/InputTNumber'
+import {InputTNumber} from './Components/InputTNumber';
+import {Button} from "./Components/Button";
+import {Title} from "./Components/Title";
 //Effector
 import {getTextContentFx, $textContent, $textContentJoined} from './effector'
 import {useStore} from 'effector-react'
@@ -25,7 +27,7 @@ export const App = () => {
     return (
         <div className="app loripsum">
 
-            <h2 className="title loripsum__title">Tired of boring lorem ipsum?</h2>
+            <Title center color={"var(--color-blue-darker)"}>Tired of boring lorem ipsum?</Title>
 
             <form onSubmit={handleSubmit} className="form loripsum__form">
 
@@ -35,10 +37,15 @@ export const App = () => {
                               min={1}
                               max={999}
 
-                              color="var(--color-blue-darker)"
+                              color={"var(--color-blue-darker)"}
                 />
 
-                <button className="generate loripsum__button" type="submit">Generate</button>
+                <Button type="submit"
+                        color="#FFFFFF"
+                        hover={"var(--color-blue-lightest)"}
+                        active={"var(--color-blue-darker)"}
+                        background={"var(--color-blue-medium)"}
+                >Generate</Button>
             </form>
 
             <section className="output loripsum__output">
@@ -47,7 +54,7 @@ export const App = () => {
 
                 {
                     isLoading ?
-                        <Loader centering width="5px" color="var(--color-blue-light)" />
+                        <Loader width="5px" color="var(--color-blue-light)"/>
                         :
                         (
                             data.length > 0 ?
