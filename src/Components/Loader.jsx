@@ -1,6 +1,6 @@
 import React from 'react';
 //Styled
-import styled, {keyframes, css} from 'styled-components';
+import styled, {keyframes} from 'styled-components';
 
 export const Loader = (props) => {
     return (
