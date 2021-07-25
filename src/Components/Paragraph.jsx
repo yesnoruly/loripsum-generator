@@ -12,6 +12,10 @@ const StyledParagraph = styled.p`
 
     color: ${props => props.$color || "dark"};
 
+    &:last-child {
+        padding-bottom: 37px;
+    }
+
     ${props => props.$center && css`
       text-align: center;
     `};
