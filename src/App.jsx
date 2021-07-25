@@ -8,6 +8,7 @@ import {InputTNumber} from './Components/InputTNumber';
 import {Button} from "./Components/Button";
 import {Title} from "./Components/Title";
 import {Paragraph} from "./Components/Paragraph";
+import {Output} from "./Components/Output";
 //Effector
 import {$textContent, $textContentJoined, getTextContentFx} from './effector'
 import {useStore} from 'effector-react'
@@ -49,7 +50,7 @@ export const App = () => {
                 >Generate</Button>
             </form>
 
-            <section className="output loripsum__output">
+            <Output $p={"37px"} $mtop={"24px"} $h={"550px"} $gap={"32px"} $center>
 
                 <CopyToClipboard data={textContentJoined}/>
 
@@ -70,7 +71,7 @@ export const App = () => {
                         )
                 }
 
-            </section>
+            </Output>
 
         </div>
     )
