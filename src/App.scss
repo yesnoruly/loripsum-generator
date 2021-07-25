@@ -7,41 +7,6 @@
   @media (max-width: 550px) {
     padding-top: 30px;
   }
-
-  &__button {
-    font-size: 20px;
-    line-height: 14px;
-    color: #FFFFFF;
-
-    background: var(--color-blue-medium);
-    transition: background .2s ease;
-
-    &:hover {
-      background: var(--color-blue-lightest)
-    }
-
-    &:active {
-      background: var(--color-blue-dark);
-    }
-  }
-
-  &__output {
-    padding: 37px;
-    margin-top: 24px;
-    height: 550px;
-    overflow-y: auto;
-
-    display: grid;
-    justify-content: center;
-    gap: 32px;
-
-    position: relative;
-    @media (max-width: 666px) {
-      height: 400px;
-      margin-top: 15px;
-      padding: 20px;
-    }
-  }
 }
 
 /* Form */
@@ -67,19 +32,4 @@
   text-align: center;
   font-size: 50px;
   line-height: 30px;
-}
-
-/* Paragraph */
-
-.paragraph {
-  font-size: 20px;
-  line-height: 24px;
-}
-
-/* Output */
-
-.output {
-  background: #FFFFFF;
-  box-shadow: 4px 4px 23px -3px rgba(0, 0, 0, 0.16);
-  border-radius: 4px;
 }
