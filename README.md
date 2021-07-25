@@ -1,6 +1,6 @@
 # Lorem ipsum generator 🌍
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit <br /> <br />
+~~Lorem ipsum dolor sit amet, consectetur adipiscing elit~~ <br /> <br />
 <img src="https://i.imgur.com/keKO8hw.gif" alt="Video" /> <br />
 [See demo](https://google.com)
 
