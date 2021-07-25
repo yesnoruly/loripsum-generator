@@ -14,13 +14,13 @@ const StyledTitle = styled.h2`
     line-height: 33px;
     text-transform: uppercase;
 
-    color: ${props => props.color || "#000000"};
+    color: ${props => props.$color || "#000000"};
 
     @media (max-width: 550px) {
         font-size: 25px;
     }
 
-${props => props.center && css`
+${props => props.$center && css`
     text-align: center;
 `}
 `

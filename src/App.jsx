@@ -27,7 +27,7 @@ export const App = () => {
     return (
         <div className="app loripsum">
 
-            <Title center color={"var(--color-blue-darker)"}>Tired of boring lorem ipsum?</Title>
+            <Title $center $color={"var(--color-blue-darker)"}>Tired of boring lorem ipsum?</Title>
 
             <form onSubmit={handleSubmit} className="form loripsum__form">
 
@@ -37,14 +37,14 @@ export const App = () => {
                               min={1}
                               max={999}
 
-                              color={"var(--color-blue-darker)"}
+                              $color={"var(--color-blue-darker)"}
                 />
 
                 <Button type="submit"
-                        color="#FFFFFF"
-                        hover={"var(--color-blue-lightest)"}
-                        active={"var(--color-blue-darker)"}
-                        background={"var(--color-blue-medium)"}
+                        $color="#FFFFFF"
+                        $hover={"var(--color-blue-lightest)"}
+                        $active={"var(--color-blue-darker)"}
+                        $background={"var(--color-blue-medium)"}
                 >Generate</Button>
             </form>
 
@@ -54,7 +54,7 @@ export const App = () => {
 
                 {
                     isLoading ?
-                        <Loader width="5px" color="var(--color-blue-light)"/>
+                        <Loader $width="5px" $color="var(--color-blue-light)"/>
                         :
                         (
                             data.length > 0 ?

@@ -18,16 +18,16 @@ const StyledButton = styled.button`
 
     font-size: 20px;
     line-height: 14px;
-    color: ${props => props.color || "#FFFFFF"};
+    color: ${props => props.$color || "#FFFFFF"};
 
-    background: ${props => props.background || "#000000"};
+    background: ${props => props.$background || "#000000"};
     transition: background .2s ease;
 
     &:hover {
-        background: ${props => props.hover || "#666666"};
+        background: ${props => props.$hover || "#666666"};
     }
 
     &:active {
-        background: ${props => props.active || "#999" };
+        background: ${props => props.$active || "#999" };
     }
 `

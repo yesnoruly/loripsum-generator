@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 export const InputTNumber = (props) => {
     return (
-        <StyledLabel color={props.color}>
+        <StyledLabel $color={props.$color}>
             {props.labelText}
             <StyledInput {...props}/>
         </StyledLabel>
@@ -15,7 +15,7 @@ const StyledLabel = styled.label`
     font-size: 20px;
     line-height: 23px;
     letter-spacing: 1.6px;
-    color: ${props => props.color || "dark"};
+    color: ${props => props.$color || "dark"};
 
     display: grid;
     grid-auto-flow: column;
@@ -43,5 +43,5 @@ const StyledInput = styled.input.attrs({
     border-radius: 4px;
     padding: 0 5px;
 
-    color: ${props => props.color || "dark"};
+    color: ${props => props.$color || "dark"};
 `
