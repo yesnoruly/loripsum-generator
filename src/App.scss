@@ -25,25 +25,15 @@
     }
   }
 
-  &__paragraph {
-    color: var(--color-blue-dark);
-    margin-bottom: 32px;
-    text-align: center;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-
   &__output {
     padding: 37px;
     margin-top: 24px;
     height: 550px;
     overflow-y: auto;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    justify-content: center;
+    gap: 32px;
 
     position: relative;
     @media (max-width: 666px) {
