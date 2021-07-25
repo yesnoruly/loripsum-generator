@@ -7,8 +7,9 @@ import {CopyToClipboard} from './Components/CopyToClipboard';
 import {InputTNumber} from './Components/InputTNumber';
 import {Button} from "./Components/Button";
 import {Title} from "./Components/Title";
+import {Paragraph} from "./Components/Paragraph";
 //Effector
-import {getTextContentFx, $textContent, $textContentJoined} from './effector'
+import {$textContent, $textContentJoined, getTextContentFx} from './effector'
 import {useStore} from 'effector-react'
 
 export const App = () => {
@@ -59,7 +60,10 @@ export const App = () => {
                         (
                             textContent.length > 0 ?
                                 textContent.map((item, index) => {
-                                    return <p key={index} className="paragraph loripsum__paragraph">{item}</p>
+                                    return <Paragraph key={index}
+                                                      $center
+                                                      $size={"20px"}
+                                                      $color={"var(--color-blue-dark)"}>{item}</Paragraph>
                                 })
                                 :
                                 <p className="empty">😎</p>
