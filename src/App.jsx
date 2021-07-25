@@ -13,9 +13,9 @@ import {useStore} from 'effector-react'
 
 export const App = () => {
 
-    const data = useStore($textContent)
+    const textContent = useStore($textContent)
     const isLoading = useStore(getTextContentFx.pending)
-    const dataJoined = useStore($textContentJoined)
+    const textContentJoined = useStore($textContentJoined)
 
     const [input, setInput] = useState("1")
 
@@ -50,15 +50,15 @@ export const App = () => {
 
             <section className="output loripsum__output">
 
-                <CopyToClipboard data={dataJoined}/>
+                <CopyToClipboard data={textContentJoined}/>
 
                 {
                     isLoading ?
                         <Loader $width="5px" $color="var(--color-blue-light)"/>
                         :
                         (
-                            data.length > 0 ?
-                                data.map((item, index) => {
+                            textContent.length > 0 ?
+                                textContent.map((item, index) => {
                                     return <p key={index} className="paragraph loripsum__paragraph">{item}</p>
                                 })
                                 :
