@@ -27,11 +27,11 @@ export const App = () => {
     }
 
     return (
-        <div className="app loripsum">
+        <div className="app">
 
             <Title $center $color={"var(--color-blue-darker)"}>Tired of boring lorem ipsum?</Title>
 
-            <form onSubmit={handleSubmit} className="form loripsum__form">
+            <form onSubmit={handleSubmit} className="form">
 
                 <InputTNumber labelText="Paragraphs:"
                               value={input}
