@@ -39,7 +39,6 @@ export const App = () => {
                               onChange={e => setInput(e.target.value)}
                               min={1}
                               max={999}
-
                               $color={"var(--color-blue-darker)"}
                 />
 
