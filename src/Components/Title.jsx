@@ -1,6 +1,6 @@
 import React from 'react';
 //Styled
-import styled, {css} from 'styled-components';
+import styled from 'styled-components';
 
 export const Title = (props) => {
     return (
@@ -9,10 +9,10 @@ export const Title = (props) => {
 }
 
 const StyledTitle = styled.h2`
-    font-weight: bold;
+    font-weight: ${props => props.$weight || "bold"};
     font-size: 28px;
     line-height: 33px;
-    text-transform: uppercase;
+    text-transform: ${props => props.$transform || "uppercase"};
 
     color: ${props => props.$color || "#000000"};
 
@@ -20,7 +20,5 @@ const StyledTitle = styled.h2`
         font-size: 25px;
     }
 
-${props => props.$center && css`
-    text-align: center;
-`}
+    text-align: ${props => props.$alignment || "left"};
 `
