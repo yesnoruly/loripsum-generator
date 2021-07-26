@@ -12,6 +12,7 @@ import {Output} from "./Components/Output";
 //Effector
 import {$textContent, $textContentJoined, getTextContentFx} from './effector'
 import {useStore} from 'effector-react'
+import {Form} from "./Components/Form";
 
 export const App = () => {
 
@@ -29,9 +30,9 @@ export const App = () => {
     return (
         <div className="app">
 
-            <Title $center $color={"var(--color-blue-darker)"}>Tired of boring lorem ipsum?</Title>
+            <Title $alignment={"center"} $color={"var(--color-blue-darker)"}>Tired of boring lorem ipsum?</Title>
 
-            <form onSubmit={handleSubmit} className="form">
+            <Form onSubmit={handleSubmit} $mtop={"31px"} $grid $gap={"12px"}>
 
                 <InputTNumber labelText="Paragraphs:"
                               value={input}
@@ -48,7 +49,7 @@ export const App = () => {
                         $active={"var(--color-blue-darker)"}
                         $background={"var(--color-blue-medium)"}
                 >Generate</Button>
-            </form>
+            </Form>
 
             <Output $p={"37px"} $mtop={"24px"} $h={"550px"} $gap={"32px"} $center>
 
