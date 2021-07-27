@@ -20,14 +20,14 @@ const StyledButton = styled.button`
     line-height: 14px;
     color: ${props => props.$color || "#FFFFFF"};
 
-    background: ${props => props.$background || "#000000"};
+    background: ${props => props.$bg || "#000000"};
     transition: background .2s ease;
 
     &:hover {
-        background: ${props => props.$hover || "#666666"};
+        background: ${props => props.$bgHover || "#666666"};
     }
 
     &:active {
-        background: ${props => props.$active || "#999" };
+        background: ${props => props.$bgActive || "#999" };
     }
 `

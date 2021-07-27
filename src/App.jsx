@@ -44,13 +44,13 @@ export const App = () => {
 
                 <Button type="submit"
                         $color="#FFFFFF"
-                        $hover={"var(--color-blue-lightest)"}
-                        $active={"var(--color-blue-darker)"}
-                        $background={"var(--color-blue-medium)"}
+                        $bg={"var(--color-blue-medium)"}
+                        $bgHover={"var(--color-blue-lightest)"}
+                        $bgActive={"var(--color-blue-darker)"}
                 >Generate</Button>
             </Form>
 
-            <Output $p={"37px"} $mtop={"24px"} $h={"550px"} $gap={"32px"} $center>
+            <Output $p={"37px"} $mTop={"24px"} $h={"550px"} $gap={"32px"} $center>
 
                 <CopyToClipboard data={textContentJoined}/>
 

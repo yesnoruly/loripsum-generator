@@ -12,7 +12,7 @@ const StyledOutput = styled.section`
     border-radius: 4px;
 
     padding: ${props => props.$p || "0"};
-    margin-top: ${props => props.$mtop || "0"};
+    margin-top: ${props => props.$mTop || "0"};
     height: ${props => props.$h || "auto"};
     overflow-y: auto;
 
