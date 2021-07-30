@@ -11,7 +11,7 @@ const StyledForm = styled.form`
 
     ${props => props.$grid && css`
         display: grid;
-        grid-auto-flow: ${props => props.$auto_flow || "column"};
+        grid-auto-flow: ${props => props.$autoFlow || "column"};
         justify-content: ${props => props.$jcontent || "center"};
         align-items: ${props => props.$jcontent || "center"};
         grid-gap: ${props => props.$gap || "0"};
