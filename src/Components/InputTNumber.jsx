@@ -26,8 +26,6 @@ const StyledLabel = styled.label`
 
 const StyledInput = styled.input.attrs({
     type: "number",
-    min: 1,
-    max: 999,
     step: 1,
 })`
     height: 30px;
