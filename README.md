@@ -1,7 +1,9 @@
 # Lorem ipsum generator 🐠
 
-~~Lorem ipsum dolor sit amet, consecrated advising elite~~ <br /> <br />
-<img src="https://i.imgur.com/keKO8hw.gif" title="App preview" /> <br />
+~~Lorem ipsum dolor sit amet, consecrated advising elite~~
+
+![App preview](https://i.imgur.com/keKO8hw.gif)
+
 [See demo](https://google.com)
 
 ## Technologies ⚙️
@@ -45,26 +47,82 @@ npm run serve
 
 In this project I am using Styled Components to style my components
 
-- ***To prevent properties from appearing in the attribute of the final html element, use the dollar sign ($) in front
-  of the properties itself*** <br />
+- **_To prevent properties from appearing in the attribute of the final html element, use the dollar sign ($) in front
+  of the properties itself_**
+
+### Title
+
+Provides the title or name of the document/block/article
+
+#### Styled Props
+
+| Name       | Type   | Default   | Description                                               |
+| ---------- | ------ | --------- | --------------------------------------------------------- |
+| $color     | string | #000000   | Title text color                                          |
+| $weight    | string | bold      | Title font weight                                         |
+| $transform | string | uppercase | Specifies how to capitalize a title                       |
+| $alignment | string | left      | Describes how title aligned with its parent block element |
 
 ### Button
 
-![Imgur](https://i.imgur.com/70exNUi.png) <br />
+![img](https://i.imgur.com/70exNUi.png)
 
 Creates a clickable button that can be used in forms or anywhere else in a document that requires a button
 
 #### Props
 
-| Name  | Type    | Default  |               Description              |
-|  ---  | ---     |   ---    |                   ---                  |
-| type  | string  | null     | Specifies the default button behavior  |
+| Name | Type   | Default | Description             |
+| ---- | ------ | ------- | ----------------------- |
+| type | string | null    | Default button behavior |
 
 #### Styled Props
 
-|  Name   |  Type   |   Default   |               Description               |
-|   ---   |   ---   |     ---     |                   ---                   |
-| $color  | string  |   #ffffff   | Specifies the color of the button text  |
-| $bg  | string  |   #000000   | Specifies the background color of the button  |
-| $bgHover  | string  |   #666666   | Specifies the background color of the button on hover  |
-| $bgActive  | string  |   #999   | Specifies the background color of the button on click  |
+| Name      | Type   | Default | Description                             |
+| --------- | ------ | ------- | --------------------------------------- |
+| $color    | string | #ffffff | Button text color                       |
+| $bg       | string | #000000 | Background color of the button          |
+| $bgHover  | string | #666666 | Background color of the button on hover |
+| $bgActive | string | #999    | Background color of the button on click |
+
+### InputTNumber
+
+![img](https://i.imgur.com/0g8N5gl.png)
+
+The element that is used to enter numbers, the input tag is nested within the label tag:
+
+```html
+<label>
+    <input>
+</label>
+```
+
+#### Props 
+
+| Name      | Type            | Default | Description                                                      |
+| --------- | --------------- | ------- | ---------------------------------------------------------------- |
+| labelText | string          | null    | Label text                                                       |
+| value     | string          | null    | Default input value                                              |
+| onChange  | function        | null    | When the value of input changes                                  |
+| min       | number \ string | null    | Specifies the minimum value of input                             |
+| max       | number \ string | null    | Specifies the maximum value of input                             |
+| step      | number \ string | 1       | specifies the interval between legal numbers in an input element |
+
+#### Styled props
+
+| Name   | Type   | Default | Description                |
+| ------ | ------ | ------- | -------------------------- |
+| $color | string | #000000 | Label and input text color |
+| $size  | string | 20px    | Font size                  |
+
+### CopyToClipboard
+
+![img](https://i.imgur.com/cbioem9.png)
+
+Element for copying text
+
+#### Props
+
+| Name | Type   | Default | Description       |
+| ---- | ------ | ------- | ----------------- |
+| data | string | null    | Data to be copied |
+
