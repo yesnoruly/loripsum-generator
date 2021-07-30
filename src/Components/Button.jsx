@@ -28,6 +28,6 @@ const StyledButton = styled.button`
     }
 
     &:active {
-        background: ${props => props.$bgActive || "#999" };
+        background: ${props => props.$bgActive || "#999"};
     }
 `
