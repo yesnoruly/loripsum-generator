@@ -92,7 +92,7 @@ The element that is used to enter numbers, the input tag is nested within the la
 
 ```html
 <label>
-    <input>
+  <input>
 </label>
 ```
 
@@ -130,12 +130,7 @@ Element for copying text
 
 Form element that wraps form controls
 
-#### Props 
-
-| Name         | Type | Default | Description                                 |
-| ------------ | ---- | ------- | ------------------------------------------- |
-| children     | -    | -       | Child elements                              |
-| handleSubmit | func | null    | Execute javascript when a form is submitted |
+с
 
 #### Styled Props
 
@@ -144,9 +139,20 @@ Form element that wraps form controls
 | $mtop     | string  | 0px     | Margin top                                                       |
 | $grid     | boolean | false   | Turns on the grid property                                       |
 | $autoFlow | string  | column  | Controls the operation of the automatic item placement algorithm |
-| $jcontent | string  | center  | Justify content                                                  |
-| $aitems   | string  | center  | Align items                                                      |
+| $jc       | string  | center  | Justify content                                                  |
+| $ai       | string  | center  | Align items                                                      |
 | $gap      | string  | 0px     | Indentation between elements                                     |
 
 ### Loader
 
+![img](https://i.imgur.com/wxCcXU4.png)
+
+An element that is used while waiting for a request to the server, etc.
+
+#### Styled Props
+
+| Name     | Type   | Default | Description              |
+| -------- | ------ | ------- | ------------------------ |
+| $width   | string | 3px     | Width                    |
+| $color   | string | #666    | Spinner color            |
+| $bgColor | string | #000    | Spinner background color |
