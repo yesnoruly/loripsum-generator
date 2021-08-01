@@ -47,8 +47,8 @@ npm run serve
 
 In this project I am using Styled Components to style my components
 
-- **_To prevent properties from appearing in the attribute of the final html element, use the dollar sign ($) in front
-  of the properties itself_**
+> To prevent properties from appearing in the attribute of the final html element, use the dollar sign ($) in front
+> of the properties itself
 
 ### Title
 
@@ -96,7 +96,7 @@ The element that is used to enter numbers, the input tag is nested within the la
 </label>
 ```
 
-#### Props 
+#### Props
 
 | Name      | Type            | Default | Description                                                      |
 | --------- | --------------- | ------- | ---------------------------------------------------------------- |
@@ -125,4 +125,28 @@ Element for copying text
 | Name | Type   | Default | Description       |
 | ---- | ------ | ------- | ----------------- |
 | data | string | null    | Data to be copied |
+
+### Form
+
+Form element that wraps form controls
+
+#### Props 
+
+| Name         | Type | Default | Description                                 |
+| ------------ | ---- | ------- | ------------------------------------------- |
+| children     | -    | -       | Child elements                              |
+| handleSubmit | func | null    | Execute javascript when a form is submitted |
+
+#### Styled Props
+
+| Name      | Type    | Default | Description                                                      |
+| --------- | ------- | ------- | ---------------------------------------------------------------- |
+| $mtop     | string  | 0px     | Margin top                                                       |
+| $grid     | boolean | false   | Turns on the grid property                                       |
+| $autoFlow | string  | column  | Controls the operation of the automatic item placement algorithm |
+| $jcontent | string  | center  | Justify content                                                  |
+| $aitems   | string  | center  | Align items                                                      |
+| $gap      | string  | 0px     | Indentation between elements                                     |
+
+### Loader
 
