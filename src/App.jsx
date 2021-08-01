@@ -50,7 +50,7 @@ export const App = () => {
                 >Generate</Button>
             </Form>
 
-            <Output $p={"37px"} $mTop={"24px"} $h={"550px"} $gap={"32px"} $center>
+            <Output $p={"37px"} $mtop={"24px"} $h={"550px"} $gap={"32px"} $center>
 
                 <CopyToClipboard data={textContentJoined}/>
 

@@ -12,12 +12,12 @@ const StyledOutput = styled.section`
     border-radius: 4px;
 
     padding: ${props => props.$p || "0"};
-    margin-top: ${props => props.$mTop || "0"};
+    margin-top: ${props => props.$mtop || "0"};
     height: ${props => props.$h || "auto"};
     overflow-y: auto;
 
     display: grid;
-    gap: ${props => props.$gap || ""};
+    gap: ${props => props.$gap || "0"};
 
     ${props => props.$center && css`
         justify-content: center;
