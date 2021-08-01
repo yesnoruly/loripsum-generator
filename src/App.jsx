@@ -28,13 +28,13 @@ export const App = () => {
     }
 
     return (
-        <div className="app">
+        <div className={"app"}>
 
             <Title $alignment={"center"} $color={"var(--color-blue-darker)"}>Tired of boring lorem ipsum?</Title>
 
             <Form onSubmit={handleSubmit} $mtop={"31px"} $grid $gap={"12px"}>
 
-                <InputTNumber labelText="Paragraphs:"
+                <InputTNumber labelText={"Paragraphs:"}
                               value={input}
                               onChange={e => setInput(e.target.value)}
                               min={1}
@@ -42,7 +42,7 @@ export const App = () => {
                               $color={"var(--color-blue-darker)"}
                 />
 
-                <Button type="submit"
+                <Button type={"submit"}
                         $color="#FFFFFF"
                         $bg={"var(--color-blue-medium)"}
                         $bgHover={"var(--color-blue-lightest)"}
@@ -56,7 +56,7 @@ export const App = () => {
 
                 {
                     isLoading ?
-                        <Loader $width="5px" $color="var(--color-blue-light)"/>
+                        <Loader $width={"5px"} $color={"var(--color-blue-light)"}/>
                         :
                         (
                             textContent.length > 0 ?
@@ -70,6 +70,8 @@ export const App = () => {
                                 <p className="empty">😎</p>
                         )
                 }
+
+              <Loader $width="5px" $color="var(--color-blue-light)"/>
 
             </Output>
 
