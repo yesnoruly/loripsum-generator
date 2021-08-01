@@ -128,9 +128,7 @@ Element for copying text
 
 ### Form
 
-Form element that wraps form controls
-
-с
+Form element that wraps form controls, accepts children
 
 #### Styled Props
 
@@ -156,3 +154,33 @@ An element that is used while waiting for a request to the server, etc.
 | $width   | string | 3px     | Width                    |
 | $color   | string | #666    | Spinner color            |
 | $bgColor | string | #000    | Spinner background color |
+
+### Output
+
+![img](https://i.imgur.com/n7tKmFv.png)
+
+Field for displaying any data, accepts children
+
+#### Styled Props
+
+| Name    | Type    | Default | Description                   |
+| ------- | ------- | ------- | ----------------------------- |
+| $mtop   | string  | 0px     | Margin top                    |
+| $p      | string  | 0px     | Padding                       |
+| $h      | string  | auto    | Height                        |
+| $gap    | string  | 0px     | Padding between grid elements |
+| $center | boolean | false   | Aligning text inside          |
+
+### Paragraph
+
+![img](https://i.imgur.com/Fq4pKR6.png)
+
+Text element
+
+#### Styled Props
+
+| Name    | Type    | Default | Description   |
+| ------- | ------- | ------- | ------------- |
+| $color  | string  | #000    | Text color    |
+| $size   | string  | 14px    | Text size     |
+| $center | boolean | false   | Text aligning |
