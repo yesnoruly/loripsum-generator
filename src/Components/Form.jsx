@@ -12,8 +12,8 @@ const StyledForm = styled.form`
     ${props => props.$grid && css`
         display: grid;
         grid-auto-flow: ${props => props.$autoFlow || "column"};
-        justify-content: ${props => props.$jcontent || "center"};
-        align-items: ${props => props.$aitems || "center"};
+        justify-content: ${props => props.$jc || "center"};
+        align-items: ${props => props.$ai || "center"};
         grid-gap: ${props => props.$gap || "0"};
 
         @media (max-width: 362px) {
