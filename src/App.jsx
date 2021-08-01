@@ -9,10 +9,10 @@ import {Button} from "./Components/Button";
 import {Title} from "./Components/Title";
 import {Paragraph} from "./Components/Paragraph";
 import {Output} from "./Components/Output";
+import {Form} from "./Components/Form";
 //Effector
 import {$textContent, $textContentJoined, getTextContentFx} from './effector'
 import {useStore} from 'effector-react'
-import {Form} from "./Components/Form";
 
 export const App = () => {
 
