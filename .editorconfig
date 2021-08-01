@@ -20,4 +20,4 @@ trim_trailing_whitespace = true
 trim_trailing_whitespace = false
 
 [{*.jsx, *.js}]
-indent_size = 4
+indent_size = 2
