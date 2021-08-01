@@ -71,8 +71,6 @@ export const App = () => {
                         )
                 }
 
-              <Loader $width="5px" $color="var(--color-blue-light)"/>
-
             </Output>
 
         </div>
