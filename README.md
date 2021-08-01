@@ -47,8 +47,8 @@ npm run serve
 
 In this project I am using Styled Components to style my components
 
-> To prevent properties from appearing in the attribute of the final html element, use the dollar sign ($) in front
-> of the properties itself
+> To prevent properties from appearing in the attribute of the final HTML element, use the dollar sign ($) in front of 
+> the properties itself
 
 ### Title
 
@@ -105,7 +105,7 @@ The element that is used to enter numbers, the input tag is nested within the la
 | onChange  | function        | null    | When the value of input changes                                  |
 | min       | number \ string | null    | Specifies the minimum value of input                             |
 | max       | number \ string | null    | Specifies the maximum value of input                             |
-| step      | number \ string | 1       | specifies the interval between legal numbers in an input element |
+| step      | number \ string | 1       | Specifies the interval between legal numbers in an input element |
 
 #### Styled props
 
@@ -184,3 +184,9 @@ Text element
 | $color  | string  | #000    | Text color    |
 | $size   | string  | 14px    | Text size     |
 | $center | boolean | false   | Text aligning |
+
+---
+
+In this project I have used vitejs to build my application
+
+---
