@@ -13,7 +13,7 @@ const StyledForm = styled.form`
         display: grid;
         grid-auto-flow: ${props => props.$autoFlow || "column"};
         justify-content: ${props => props.$jcontent || "center"};
-        align-items: ${props => props.$jcontent || "center"};
+        align-items: ${props => props.$aitems || "center"};
         grid-gap: ${props => props.$gap || "0"};
 
         @media (max-width: 362px) {
