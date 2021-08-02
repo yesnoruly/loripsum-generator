@@ -1,12 +1,12 @@
 {
   "name": "loripsum-generator",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "lint": "eslint **/src/**/*.{js,jsx,scss}",
-    "lint:fix": "eslint **/src/**/*.{js,jsx,scss} --fix"
+    "lint": "eslint **/src/**/*.{js,jsx}",
+    "lint:fix": "eslint **/src/**/*.{js,jsx} --fix"
   },
   "dependencies": {
     "effector": "^21.8.11",
