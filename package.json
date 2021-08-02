@@ -4,7 +4,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "lint": "eslint **/src/**/*.{js,jsx,scss}",
+    "lint:fix": "eslint **/src/**/*.{js,jsx,scss} --fix"
   },
   "dependencies": {
     "effector": "^21.8.11",
