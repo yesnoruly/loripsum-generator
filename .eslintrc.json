@@ -19,6 +19,12 @@
     "react"
   ],
   "rules": {
-    "import/prefer-default-export": "off"
+    "import/prefer-default-export": "off",
+    "no-nested-ternary": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/no-array-index-key": "off",
+    "react/destructuring-assignment": "off",
+    "react/prop-types": "off",
+    "import/order": "off"
   }
 }
