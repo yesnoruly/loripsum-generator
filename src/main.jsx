@@ -1,12 +1,12 @@
-//React
+// React
 import React from 'react';
 import ReactDOM from 'react-dom';
-//Style
+// Style
 import './index.scss';
-//Components
-import {App} from './App';
+// Components
+import { App } from './App';
 
 ReactDOM.render(
-    <App/>,
-    document.getElementById('root')
-)
+  <App />,
+  document.getElementById('root'),
+);

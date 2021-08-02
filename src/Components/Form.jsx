@@ -1,23 +1,21 @@
 import React from 'react';
-//Styled
-import styled, {css} from 'styled-components';
+// Styled
+import styled, { css } from 'styled-components';
 
-export const Form = (props) => {
-    return <StyledForm {...props}>{props.children}</StyledForm>
-}
+export const Form = (props) => <StyledForm {...props}>{props.children}</StyledForm>;
 
 const StyledForm = styled.form`
-    margin-top: ${props => props.$mtop || "0"};
+  margin-top: ${(props) => props.$mtop || '0'};
 
-    ${props => props.$grid && css`
-        display: grid;
-        grid-auto-flow: ${props => props.$autoFlow || "column"};
-        justify-content: ${props => props.$jc || "center"};
-        align-items: ${props => props.$ai || "center"};
-        grid-gap: ${props => props.$gap || "0"};
+  ${(props) => props.$grid && css`
+    display: grid;
+    grid-auto-flow: ${props.$autoFlow || 'column'};
+    justify-content: ${props.$jc || 'center'};
+    align-items: ${props.$ai || 'center'};
+    grid-gap: ${props.$gap || '0'};
 
-        @media (max-width: 362px) {
-            grid-auto-flow: row;
-        }
-    `}
-`
+    @media (max-width: 362px) {
+      grid-auto-flow: row;
+    }
+  `}
+`;

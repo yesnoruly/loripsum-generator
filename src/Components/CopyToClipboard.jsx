@@ -1,21 +1,20 @@
 import React from 'react';
-//Styled
+// Styled
 import styled from 'styled-components';
-//Icons
+// Icons
 import copy from './icon/copy.svg';
 
-export const CopyToClipboard = ({data}) => {
+export const CopyToClipboard = ({ data }) => {
+  const handleClick = () => {
+    navigator.clipboard.writeText(data);
+  };
 
-    const handleClick = () => {
-        navigator.clipboard.writeText(data)
-    }
-
-    return (
-        <StyledCopyToClipboard onClick={handleClick}>
-            <img src={copy} alt="Copy to clipboard"/>
-        </StyledCopyToClipboard>
-    )
-}
+  return (
+    <StyledCopyToClipboard onClick={handleClick}>
+      <img src={copy} alt="Copy to clipboard" />
+    </StyledCopyToClipboard>
+  );
+};
 
 const StyledCopyToClipboard = styled.button`
     background-color: var(--color-grey-lightest);
@@ -37,4 +36,4 @@ const StyledCopyToClipboard = styled.button`
     &:active {
         background-color: var(--color-grey-dark);
     }
-`
+`;
