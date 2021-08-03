@@ -15,33 +15,31 @@
 
 ## Quick start 🏎️
 
-**Install the dependencies:**
+### `npm install`
 
-```shell
-npm install
-```
+**Install the dependencies**
 
-**Run the app**
+### `npm run dev`
 
-```shell
-npm run dev
-```
-
-**You can view the app by visiting `http://localhost:3000/`.**
+**Run the app, you can view the app by visiting `http://localhost:3000/`**
 
 ---
 
-**Builds the app for production to the dist folder.**
+### `npm run build`
 
-```shell
-npm run build
-```
+**Builds the app for production to the dist folder**
+
+### `npm run serve`
 
 **Serves the production build from the dist folder.**
 
-```shell
-npm run serve
-```
+### `npm run eslint`
+
+**Run ESLint**
+
+### `npm run lint:fix`
+
+**Run ESLint with fix**
 
 ## Components guide 🔩
 
@@ -185,8 +183,6 @@ Text element
 | $size   | string  | 14px    | Text size     |
 | $center | boolean | false   | Text aligning |
 
----
+## Vite
 
-In this project I have used vitejs to build my application
-
----
+In this project I have used [Vite](https://vitejs.dev/) to build my application
