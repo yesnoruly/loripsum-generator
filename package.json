@@ -5,8 +5,8 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "lint": "eslint **/src/**/*.{js,jsx}",
-    "lint:fix": "eslint **/src/**/*.{js,jsx} --fix"
+    "lint": "eslint **/*.{js,jsx}",
+    "lint:fix": "eslint **/*.{js,jsx} --fix"
   },
   "dependencies": {
     "effector": "^21.8.11",
