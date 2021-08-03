@@ -4,17 +4,11 @@ import styled from 'styled-components';
 // Icons
 import copy from './icon/copy.svg';
 
-export const CopyToClipboard = ({data}) => {
-  const handleClick = () => {
-    navigator.clipboard.writeText(data);
-  };
-
-  return (
-    <StyledCopyToClipboard onClick={handleClick}>
-      <img src={copy} alt="Copy to clipboard" />
-    </StyledCopyToClipboard>
-  );
-};
+export const CopyToClipboard = ({data}) => (
+  <StyledCopyToClipboard onClick={() => navigator.clipboard.writeText(data)}>
+    <img src={copy} alt="Copy to clipboard" />
+  </StyledCopyToClipboard>
+);
 
 const StyledCopyToClipboard = styled.button`
   background-color: var(--color-grey-lightest);
