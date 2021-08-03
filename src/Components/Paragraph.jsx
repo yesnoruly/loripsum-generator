@@ -2,7 +2,18 @@ import React from 'react';
 // Styled
 import styled, { css } from 'styled-components';
 
-export const Paragraph = (props) => <StyledParagraph {...props}>{props.children}</StyledParagraph>;
+export const Paragraph = ({
+  key, $size, $center, $color, children,
+}) => (
+  <StyledParagraph
+    key={key}
+    $size={$size}
+    $center={$center}
+    $color={$color}
+  >
+    {children}
+  </StyledParagraph>
+);
 
 const StyledParagraph = styled.p`
   font-size: ${(props) => props.$size || '14px'};

@@ -2,7 +2,18 @@ import React from 'react';
 // Styled
 import styled, { css } from 'styled-components';
 
-export const Form = (props) => <StyledForm {...props}>{props.children}</StyledForm>;
+export const Form = ({
+  onSubmit, $grid, $gap, $mtop, children,
+}) => (
+  <StyledForm
+    onSubmit={onSubmit}
+    $grid={$grid}
+    $gap={$gap}
+    $mtop={$mtop}
+  >
+    {children}
+  </StyledForm>
+);
 
 const StyledForm = styled.form`
   margin-top: ${(props) => props.$mtop || '0'};

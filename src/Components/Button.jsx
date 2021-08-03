@@ -2,9 +2,17 @@ import React from 'react';
 // Styled
 import styled from 'styled-components';
 
-export const Button = (props) => (
-  <StyledButton {...props}>
-    {props.children}
+export const Button = ({
+  type, $color, $bgHover, $bgActive, $bg, children,
+}) => (
+  <StyledButton
+    type={type}
+    $color={$color}
+    $bgHover={$bgHover}
+    $bgActive={$bgActive}
+    $bg={$bg}
+  >
+    { children }
   </StyledButton>
 );
 

@@ -2,7 +2,19 @@ import React from 'react';
 // Styled
 import styled, { css } from 'styled-components';
 
-export const Output = (props) => <StyledOutput {...props}>{props.children}</StyledOutput>;
+export const Output = ({
+  $p, $gap, $center, $h, $mtop, children,
+}) => (
+  <StyledOutput
+    $p={$p}
+    $gap={$gap}
+    $center={$center}
+    $h={$h}
+    $mtop={$mtop}
+  >
+    {children}
+  </StyledOutput>
+);
 
 const StyledOutput = styled.section`
   background: #FFFFFF;

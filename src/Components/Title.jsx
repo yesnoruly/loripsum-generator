@@ -2,8 +2,16 @@ import React from 'react';
 // Styled
 import styled from 'styled-components';
 
-export const Title = (props) => (
-  <StyledTitle {...props}>{props.children}</StyledTitle>
+export const Title = ({
+  $weight, $alignment, $color, children,
+}) => (
+  <StyledTitle
+    $weight={$weight}
+    $alignment={$alignment}
+    $color={$color}
+  >
+    {children}
+  </StyledTitle>
 );
 
 const StyledTitle = styled.h2`

@@ -2,10 +2,17 @@ import React from 'react';
 // Styled
 import styled from 'styled-components';
 
-export const InputTNumber = (props) => (
-  <StyledLabel $size={props.$size} $color={props.$color}>
-    {props.labelText}
-    <StyledInput {...props} />
+export const InputTNumber = ({
+  onChange, value, max, min, labelText, $size, $color,
+}) => (
+  <StyledLabel $size={$size} $color={$color}>
+    {labelText}
+    <StyledInput
+      onChange={onChange}
+      value={value}
+      max={max}
+      min={min}
+    />
   </StyledLabel>
 );
 

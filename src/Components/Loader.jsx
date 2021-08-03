@@ -2,8 +2,8 @@ import React from 'react';
 // Styled
 import styled, { keyframes } from 'styled-components';
 
-export const Loader = (props) => (
-  <StyledLoader {...props} />
+export const Loader = ({$width, $color}) => (
+  <StyledLoader $width={$width} $color={$color} />
 );
 
 const rotation = keyframes`
