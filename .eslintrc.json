@@ -19,13 +19,14 @@
     "react"
   ],
   "rules": {
-    "import/prefer-default-export": "off",
-    "no-nested-ternary": "off",
-    "react/no-array-index-key": "off",
-    "react/prop-types": "off",
     "import/order": "off",
-    "object-curly-spacing": "off",
+    "import/prefer-default-export": "off",
+    "no-debugger": "warn",
     "no-alert": "warn",
-    "no-console": "warn"
+    "no-console": "warn",
+    "no-nested-ternary": "off",
+    "object-curly-spacing": "warn",
+    "react/no-array-index-key": "off",
+    "react/prop-types": "off"
   }
 }
