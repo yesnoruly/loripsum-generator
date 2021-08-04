@@ -12,6 +12,7 @@ export const InputTNumber = ({
       value={value}
       max={max}
       min={min}
+      $color={$color}
     />
   </StyledLabel>
 );
