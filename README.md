@@ -4,7 +4,7 @@
 
 ![App preview](https://i.imgur.com/keKO8hw.gif)
 
-[See demo](https://google.com)
+[See demo](https://loripsum-generator.vercel.app)
 
 ## Technologies ⚙️
 
