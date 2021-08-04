@@ -45,7 +45,7 @@
 
 In this project I am using Styled Components to style my components
 
-> To prevent properties from appearing in the attribute of the final HTML element, use the dollar sign ($) in front of 
+> To prevent properties from appearing in the attribute of the final HTML element, use the dollar sign ($) in front of
 > the properties itself
 
 ### Title
@@ -186,3 +186,24 @@ Text element
 ## Vite
 
 In this project I have used [Vite](https://vitejs.dev/) to build my application
+
+## ESLint
+Assignment rules used in the project
+
+🔧: Fixable with [`npm run eslint:fix`](https://eslint.org/docs/user-guide/command-line-interface#fixing-problems)
+
+| 🔧                  | Rule                                                                                                                              | Description                                                                                     |
+| ------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| <center>🔧</center> | [import/order](https://github.com/import-js/eslint-plugin-import/blob/master/docs/rules/order.md)                                 | ChecksImport Sorting                                                                            |
+|                     | [import/prefer-default-export](https://github.com/import-js/eslint-plugin-import/blob/master/docs/rules/prefer-default-export.md) | When there is only a single export from a module, prefer using default export over named export |
+|                     | [no-alert](https://eslint.org/docs/rules/no-alert)                                                                                | Disallow the use of alert, confirm, and prompt                                                  |
+|                     | [no-console](https://eslint.org/docs/rules/no-console)                                                                            | Disallow the use of console                                                                     |
+|                     | [no-debugger](https://eslint.org/docs/rules/no-debugger)                                                                          | Disallow the use of debugger                                                                    |
+|                     | [no-nested-ternary](https://eslint.org/docs/rules/no-nested-ternary)                                                              | Disallow nested ternary expressions                                                             |
+| <center>🔧</center> | [object-curly-spacing](https://eslint.org/docs/rules/object-curly-spacing)                                                        | Enforce consistent spacing inside braces                                                        |
+|                     | [react/prop-types](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prop-types.md)                         | Prevent Prevent missing props validation in a React component definition                        |
+
+## TODO
+
+- Prop types
+- Feature sliced
