@@ -202,8 +202,3 @@ Assignment rules used in the project
 |                     | [no-nested-ternary](https://eslint.org/docs/rules/no-nested-ternary)                                                              | Disallow nested ternary expressions                                                             |
 | <center>🔧</center> | [object-curly-spacing](https://eslint.org/docs/rules/object-curly-spacing)                                                        | Enforce consistent spacing inside braces                                                        |
 |                     | [react/prop-types](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prop-types.md)                         | Prevent Prevent missing props validation in a React component definition                        |
-
-## TODO
-
-- Prop types
-- Feature sliced
