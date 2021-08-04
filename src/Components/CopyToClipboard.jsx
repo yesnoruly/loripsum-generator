@@ -4,7 +4,7 @@ import styled from 'styled-components';
 // Icons
 import copy from './icon/copy.svg';
 
-export const CopyToClipboard = ({data}) => (
+export const CopyToClipboard = ({ data }) => (
   <StyledCopyToClipboard onClick={() => navigator.clipboard.writeText(data)}>
     <img src={copy} alt="Copy to clipboard" />
   </StyledCopyToClipboard>

@@ -2,7 +2,7 @@ import React from 'react';
 // Styled
 import styled, { keyframes } from 'styled-components';
 
-export const Loader = ({$width, $color}) => (
+export const Loader = ({ $width, $color }) => (
   <StyledLoader $width={$width} $color={$color} />
 );
 
