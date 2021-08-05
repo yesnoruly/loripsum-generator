@@ -1,14 +1,23 @@
 import React from 'react';
+// Use clipboard
+import useCopyClipboard from 'react-use-clipboard';
 // Styled
 import styled from 'styled-components';
 // Icons
 import copy from './icon/copy.svg';
+import checkmark from './icon/checkmark.svg';
 
-export const CopyToClipboard = ({ data }) => (
-  <StyledCopyToClipboard onClick={() => navigator.clipboard.writeText(data)}>
-    <img src={copy} alt="Copy to clipboard" />
-  </StyledCopyToClipboard>
-);
+export const CopyToClipboard = ({ data }) => {
+  const [isCopied, setCopied] = useCopyClipboard(data, {
+    successDuration: 1000,
+  });
+
+  return (
+    <StyledCopyToClipboard onClick={setCopied}>
+      <img src={isCopied ? checkmark : copy} alt="Copy to clipboard" />
+    </StyledCopyToClipboard>
+  );
+};
 
 const StyledCopyToClipboard = styled.button`
   background-color: var(--color-grey-lightest);
