@@ -183,11 +183,30 @@ Text element
 | $size   | string  | 14px    | Text size     |
 | $center | boolean | false   | Text aligning |
 
+## Hook guide
+
+### [`react-use-clipboard`](https://github.com/danoc/react-use-clipboard)
+
+```javascript
+import useClipboard from "react-use-clipboard";
+
+function App() {
+  const [isCopied, setCopied] = useClipboard("Text to copy");
+
+  return (
+    <button onClick={setCopied}>
+      Was it copied? {isCopied ? "Yes! 👍" : "Nope! 👎"}
+    </button>
+  );
+}
+```
+
 ## Vite
 
 In this project I have used [Vite](https://vitejs.dev/) to build my application
 
 ## ESLint
+
 Assignment rules used in the project
 
 🔧: Fixable with [`npm run eslint:fix`](https://eslint.org/docs/user-guide/command-line-interface#fixing-problems)
