@@ -14,7 +14,7 @@ export const CopyToClipboard = ({ data }) => {
 
   return (
     <StyledCopyToClipboard onClick={setCopied}>
-      <img src={isCopied ? checkmark : copy} alt="Copy to clipboard" />
+      <img src={isCopied ? checkmark : copy} alt="Copy." />
     </StyledCopyToClipboard>
   );
 };
