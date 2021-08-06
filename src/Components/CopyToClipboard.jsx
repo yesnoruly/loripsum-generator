@@ -40,4 +40,9 @@ const StyledCopyToClipboard = styled.button`
   &:active {
     background-color: var(--color-grey-dark);
   }
+
+  & img {
+    width: 25px;
+    height: 25px;
+  }
 `;
