@@ -3,14 +3,14 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 
 export const Output = ({
-  $p, $gap, $center, $h, $mtop, children,
+  $padding, $gap, $center, $height, $marginTop, children,
 }) => (
   <StyledOutput
-    $p={$p}
+    $padding={$padding}
     $gap={$gap}
     $center={$center}
-    $h={$h}
-    $mtop={$mtop}
+    $height={$height}
+    $marginTop={$marginTop}
   >
     {children}
   </StyledOutput>
@@ -21,9 +21,9 @@ const StyledOutput = styled.section`
   box-shadow: 4px 4px 23px -3px rgba(0, 0, 0, 0.16);
   border-radius: 4px;
 
-  padding: ${(props) => props.$p || '0'};
-  margin-top: ${(props) => props.$mtop || '0'};
-  height: ${(props) => props.$h || 'auto'};
+  padding: ${(props) => props.$padding || '0'};
+  margin-top: ${(props) => props.$marginTop || '0'};
+  height: ${(props) => props.$height || 'auto'};
   overflow-y: auto;
 
   display: grid;

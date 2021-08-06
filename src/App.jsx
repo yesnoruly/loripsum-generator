@@ -31,7 +31,7 @@ export const App = () => {
 
       <Title $alignment="center" $color="var(--color-blue-darker)">Tired of boring lorem ipsum?</Title>
 
-      <Form onSubmit={handleSubmit} $mtop="31px" $grid $gap="12px">
+      <Form onSubmit={handleSubmit} $marginTop="31px" $grid $gap="12px">
 
         <InputTNumber
           labelText="Paragraphs:"
@@ -45,15 +45,15 @@ export const App = () => {
         <Button
           type="submit"
           $color="#FFFFFF"
-          $bg="var(--color-blue-medium)"
-          $bgHover="var(--color-blue-lightest)"
-          $bgActive="var(--color-blue-darker)"
+          $background="var(--color-blue-medium)"
+          $backgroundHover="var(--color-blue-lightest)"
+          $backgroundActive="var(--color-blue-darker)"
         >
           Generate
         </Button>
       </Form>
 
-      <Output $p="37px" $mtop="24px" $h="550px" $gap="32px" $center>
+      <Output $padding="37px" $marginTop="24px" $height="550px" $gap="32px" $center>
 
         <CopyToClipboard data={textContentJoined} />
 

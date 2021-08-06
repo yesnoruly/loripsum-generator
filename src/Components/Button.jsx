@@ -3,14 +3,14 @@ import React from 'react';
 import styled from 'styled-components';
 
 export const Button = ({
-  type, $color, $bgHover, $bgActive, $bg, children,
+  type, $color, $backgroundHover, $backgroundActive, $background, children,
 }) => (
   <StyledButton
     type={type}
     $color={$color}
-    $bgHover={$bgHover}
-    $bgActive={$bgActive}
-    $bg={$bg}
+    $backgroundHover={$backgroundHover}
+    $backgroundActive={$backgroundActive}
+    $background={$background}
   >
     { children }
   </StyledButton>
@@ -28,14 +28,14 @@ const StyledButton = styled.button`
   line-height: 14px;
   color: ${(props) => props.$color || '#FFFFFF'};
 
-  background: ${(props) => props.$bg || '#000000'};
+  background: ${(props) => props.$background || '#000000'};
   transition: background .2s ease;
 
   &:hover {
-    background: ${(props) => props.$bgHover || '#666666'};
+    background: ${(props) => props.$backgroundHover || '#666666'};
   }
 
   &:active {
-    background: ${(props) => props.$bgActive || '#999'};
+    background: ${(props) => props.$backgroundActive || '#999'};
   }
 `;

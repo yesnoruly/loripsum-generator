@@ -3,20 +3,20 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 
 export const Form = ({
-  onSubmit, $grid, $gap, $mtop, children,
+  onSubmit, $grid, $gap, $marginTop, children,
 }) => (
   <StyledForm
     onSubmit={onSubmit}
     $grid={$grid}
     $gap={$gap}
-    $mtop={$mtop}
+    $marginTop={$marginTop}
   >
     {children}
   </StyledForm>
 );
 
 const StyledForm = styled.form`
-  margin-top: ${(props) => props.$mtop || '0'};
+  margin-top: ${(props) => props.$marginTop || '0'};
 
   ${(props) => props.$grid && css`
     display: grid;
