@@ -21,8 +21,8 @@ const StyledForm = styled.form`
   ${(props) => props.$grid && css`
     display: grid;
     grid-auto-flow: ${props.$autoFlow || 'column'};
-    justify-content: ${props.$jc || 'center'};
-    align-items: ${props.$ai || 'center'};
+    justify-content: ${props.$justifyContent || 'center'};
+    align-items: ${props.$alignItems || 'center'};
     grid-gap: ${props.$gap || '0'};
 
     @media (max-width: 362px) {
