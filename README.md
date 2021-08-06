@@ -48,7 +48,7 @@ In this project I am using Styled Components to style my components
 > To prevent properties from appearing in the attribute of the final HTML element, use the dollar sign ($) in front of
 > the properties itself
 
-### Title
+### [Title](https://github.com/Karvacky-Roma/loripsum-generator/blob/master/src/Components/Title.jsx)
 
 Provides the title or name of the document/block/article
 
@@ -61,7 +61,7 @@ Provides the title or name of the document/block/article
 | $transform | string | uppercase | Specifies how to capitalize a title                       |
 | $alignment | string | left      | Describes how title aligned with its parent block element |
 
-### Button
+### [Button](https://github.com/Karvacky-Roma/loripsum-generator/blob/master/src/Components/Button.jsx)
 
 ![img](https://i.imgur.com/70exNUi.png)
 
@@ -82,7 +82,7 @@ Creates a clickable button that can be used in forms or anywhere else in a docum
 | $backgroundHover  | string | #666666 | Background color of the button on hover |
 | $backgroundActive | string | #999    | Background color of the button on click |
 
-### InputTNumber
+### [InputTNumber](https://github.com/Karvacky-Roma/loripsum-generator/blob/master/src/Components/InputTNumber.jsx)
 
 ![img](https://i.imgur.com/0g8N5gl.png)
 
@@ -112,7 +112,7 @@ The element that is used to enter numbers, the input tag is nested within the la
 | $color | string | #000000 | Label and input text color |
 | $size  | string | 20px    | Font size                  |
 
-### CopyToClipboard
+### [CopyToClipboard](https://github.com/Karvacky-Roma/loripsum-generator/blob/master/src/Components/CopyToClipboard.jsx)
 
 ![img](https://i.imgur.com/cbioem9.png)
 
@@ -124,7 +124,7 @@ Element for copying text
 | ---- | ------ | ------- | ----------------- |
 | data | string | null    | Data to be copied |
 
-### Form
+### [Form](https://github.com/Karvacky-Roma/loripsum-generator/blob/master/src/Components/Form.jsx)
 
 Form element that wraps form controls, accepts children
 
@@ -139,7 +139,7 @@ Form element that wraps form controls, accepts children
 | $alignItems     | string  | center  | Align items                                                      |
 | $gap            | string  | 0px     | Indentation between elements                                     |
 
-### Loader
+### [Loader](https://github.com/Karvacky-Roma/loripsum-generator/blob/master/src/Components/Loader.jsx)
 
 ![img](https://i.imgur.com/wxCcXU4.png)
 
@@ -153,7 +153,7 @@ An element that is used while waiting for a request to the server, etc.
 | $color      | string | #666    | Spinner color            |
 | $background | string | #000    | Spinner background color |
 
-### Output
+### [Output](https://github.com/Karvacky-Roma/loripsum-generator/blob/master/src/Components/Output.jsx)
 
 ![img](https://i.imgur.com/n7tKmFv.png)
 
@@ -169,7 +169,7 @@ Field for displaying any data, accepts children
 | $gap       | string  | 0px     | Padding between grid elements |
 | $center    | boolean | false   | Aligning text inside          |
 
-### Paragraph
+### [Paragraph](https://github.com/Karvacky-Roma/loripsum-generator/blob/master/src/Components/Paragraph.jsx)
 
 ![img](https://i.imgur.com/Fq4pKR6.png)
 
@@ -201,11 +201,11 @@ function App() {
 }
 ```
 
-## Vite
+## [Vite](https://vitejs.dev/)
 
 In this project I have used [Vite](https://vitejs.dev/) to build my application
 
-## ESLint
+## [ESLint](https://github.com/Karvacky-Roma/loripsum-generator/blob/master/.eslintrc.json)
 
 Assignment rules used in the project
 
