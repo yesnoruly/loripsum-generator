@@ -75,12 +75,12 @@ Creates a clickable button that can be used in forms or anywhere else in a docum
 
 #### Styled Props
 
-| Name      | Type   | Default | Description                             |
-| --------- | ------ | ------- | --------------------------------------- |
-| $color    | string | #ffffff | Button text color                       |
-| $bg       | string | #000000 | Background color of the button          |
-| $bgHover  | string | #666666 | Background color of the button on hover |
-| $bgActive | string | #999    | Background color of the button on click |
+| Name              | Type   | Default | Description                             |
+| ----------------- | ------ | ------- | --------------------------------------- |
+| $color            | string | #ffffff | Button text color                       |
+| $background       | string | #000000 | Background color of the button          |
+| $backgroundHover  | string | #666666 | Background color of the button on hover |
+| $backgroundActive | string | #999    | Background color of the button on click |
 
 ### InputTNumber
 
@@ -130,14 +130,14 @@ Form element that wraps form controls, accepts children
 
 #### Styled Props
 
-| Name      | Type    | Default | Description                                                      |
-| --------- | ------- | ------- | ---------------------------------------------------------------- |
-| $mtop     | string  | 0px     | Margin top                                                       |
-| $grid     | boolean | false   | Turns on the grid property                                       |
-| $autoFlow | string  | column  | Controls the operation of the automatic item placement algorithm |
-| $jc       | string  | center  | Justify content                                                  |
-| $ai       | string  | center  | Align items                                                      |
-| $gap      | string  | 0px     | Indentation between elements                                     |
+| Name            | Type    | Default | Description                                                      |
+| --------------- | ------- | ------- | ---------------------------------------------------------------- |
+| $marginTop      | string  | 0px     | Margin top                                                       |
+| $grid           | boolean | false   | Turns on the grid property                                       |
+| $autoFlow       | string  | column  | Controls the operation of the automatic item placement algorithm |
+| $justifyContent | string  | center  | Justify content                                                  |
+| $alignItems     | string  | center  | Align items                                                      |
+| $gap            | string  | 0px     | Indentation between elements                                     |
 
 ### Loader
 
@@ -147,11 +147,11 @@ An element that is used while waiting for a request to the server, etc.
 
 #### Styled Props
 
-| Name     | Type   | Default | Description              |
-| -------- | ------ | ------- | ------------------------ |
-| $width   | string | 3px     | Width                    |
-| $color   | string | #666    | Spinner color            |
-| $bgColor | string | #000    | Spinner background color |
+| Name        | Type   | Default | Description              |
+| ----------- | ------ | ------- | ------------------------ |
+| $width      | string | 3px     | Width                    |
+| $color      | string | #666    | Spinner color            |
+| $background | string | #000    | Spinner background color |
 
 ### Output
 
@@ -161,13 +161,13 @@ Field for displaying any data, accepts children
 
 #### Styled Props
 
-| Name    | Type    | Default | Description                   |
-| ------- | ------- | ------- | ----------------------------- |
-| $mtop   | string  | 0px     | Margin top                    |
-| $p      | string  | 0px     | Padding                       |
-| $h      | string  | auto    | Height                        |
-| $gap    | string  | 0px     | Padding between grid elements |
-| $center | boolean | false   | Aligning text inside          |
+| Name       | Type    | Default | Description                   |
+| ---------- | ------- | ------- | ----------------------------- |
+| $marginTop | string  | 0px     | Margin top                    |
+| $padding   | string  | 0px     | Padding                       |
+| $height    | string  | auto    | Height                        |
+| $gap       | string  | 0px     | Padding between grid elements |
+| $center    | boolean | false   | Aligning text inside          |
 
 ### Paragraph
 
@@ -213,7 +213,7 @@ Assignment rules used in the project
 
 | 🔧                  | Rule                                                                                                                              | Description                                                                                     |
 | ------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| <center>🔧</center> | [import/order](https://github.com/import-js/eslint-plugin-import/blob/master/docs/rules/order.md)                                 | Checks Import Sorting                                                                            |
+| <center>🔧</center> | [import/order](https://github.com/import-js/eslint-plugin-import/blob/master/docs/rules/order.md)                                 | Checks Import Sorting                                                                           |
 |                     | [import/prefer-default-export](https://github.com/import-js/eslint-plugin-import/blob/master/docs/rules/prefer-default-export.md) | When there is only a single export from a module, prefer using default export over named export |
 |                     | [no-alert](https://eslint.org/docs/rules/no-alert)                                                                                | Disallow the use of alert, confirm, and prompt                                                  |
 |                     | [no-console](https://eslint.org/docs/rules/no-console)                                                                            | Disallow the use of console                                                                     |
@@ -221,6 +221,7 @@ Assignment rules used in the project
 |                     | [no-nested-ternary](https://eslint.org/docs/rules/no-nested-ternary)                                                              | Disallow nested ternary expressions                                                             |
 | <center>🔧</center> | [object-curly-spacing](https://eslint.org/docs/rules/object-curly-spacing)                                                        | Enforce consistent spacing inside braces                                                        |
 |                     | [react/prop-types](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prop-types.md)                         | Prevent Prevent missing props validation in a React component definition                        |
+| <center>🔧</center> | [linebreak-style](https://eslint.org/docs/rules/linebreak-style)                                                                  | Enforce consistent linebreak style                                                              |
 
 ## Deploy
 
