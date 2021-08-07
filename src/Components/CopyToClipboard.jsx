@@ -1,6 +1,6 @@
 import React from 'react';
 // Use clipboard
-import useCopyClipboard from 'react-use-clipboard';
+import { useCopyClipboard } from '../hooks/use-clipboard';
 // Styled
 import styled from 'styled-components';
 // Icons
