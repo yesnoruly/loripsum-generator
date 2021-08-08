@@ -6,7 +6,7 @@ export function useCopyClipboard(
   options,
 ) {
   const [isCopied, setIsCopied] = useState(false);
-  const successDuration = options && options.successDuration;
+  const successDuration = options?.successDuration;
 
   // eslint-disable-next-line consistent-return
   useEffect(() => {
