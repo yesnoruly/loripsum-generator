@@ -3,10 +3,9 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 
 export const Paragraph = ({
-  key, $size, $center, $color, children,
+  $size, $center, $color, children,
 }) => (
   <StyledParagraph
-    key={key}
     $size={$size}
     $center={$center}
     $color={$color}
