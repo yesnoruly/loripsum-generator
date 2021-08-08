@@ -80,7 +80,7 @@ Creates a clickable button that can be used in forms or anywhere else in a docum
 | $color            | string | #ffffff | Button text color                       |
 | $background       | string | #000000 | Background color of the button          |
 | $backgroundHover  | string | #666666 | Background color of the button on hover |
-| $backgroundActive | string | #999    | Background color of the button on click |
+| $backgroundActive | string | #999999 | Background color of the button on click |
 
 ### [InputTNumber](https://github.com/Karvacky-Roma/loripsum-generator/blob/master/src/Components/InputTNumber.jsx)
 
@@ -185,13 +185,32 @@ Text element
 
 ## Hook guide
 
-### [`react-use-clipboard`](https://github.com/danoc/react-use-clipboard)
+### use-clipboard
 
 ```javascript
-import useClipboard from "react-use-clipboard";
+import useClipboard from "/hooks/react-use-clipboard";
 
 function App() {
   const [isCopied, setCopied] = useClipboard("Text to copy");
+
+  return (
+    <button onClick={setCopied}>
+      Was it copied? {isCopied ? "Yes! 👍" : "Nope! 👎"}
+    </button>
+  );
+}
+```
+
+With the successDuration option:
+
+```javascript
+import useClipboard from "/hooks/react-use-clipboard";
+
+function App() {
+  const [isCopied, setCopied] = useClipboard("Text to copy", {
+    // `isCopied` will go back to `false` after 1000ms
+    successDuration: 1000,
+  });
 
   return (
     <button onClick={setCopied}>
