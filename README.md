@@ -15,29 +15,29 @@
 
 ## Quick start 🏎️
 
-#### `npm install`
+#### `npm install`:
 
 **Install the dependencies**
 
-#### `npm run dev`
+#### `npm run dev`:
 
 **Run the app, you can view the app by visiting `http://localhost:3000/`**
 
 ---
 
-#### `npm run build`
+#### `npm run build`:
 
 **Builds the app for production to the dist folder**
 
-#### `npm run serve`
+#### `npm run serve`:
 
 **Serves the production build from the dist folder.**
 
-#### `npm run eslint`
+#### `npm run eslint`:
 
 **Run ESLint**
 
-#### `npm run lint:fix`
+#### `npm run lint:fix`:
 
 **Run ESLint with fix**
 
