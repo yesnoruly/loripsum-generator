@@ -1,5 +1,9 @@
 {
   "name": "loripsum-generator",
+  "description": "Lorem Ipsum generator",
+  "homepage": "loripsum-generator.vercel.app",
+  "private": true,
+  "license": "MIT",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
