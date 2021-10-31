@@ -3,7 +3,5 @@ node_modules
 dist
 dist-ssr
 *.local
-
-#editors
 .idea/
 .vscode/
