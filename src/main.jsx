@@ -1,8 +1,6 @@
 // React
 import React from 'react';
 import ReactDOM from 'react-dom';
-// Style
-import './index.scss';
 // Components
 import { App } from './App';
 
