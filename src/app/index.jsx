@@ -1,6 +1,6 @@
 import React from 'react';
 // Styles
-import './index.css'
+import './index.css';
 
 export const App = () => {
   const text = 'asdfjkl;';
