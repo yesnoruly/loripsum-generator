@@ -1,6 +1,6 @@
-export { Button } from './Button';
-export { Title } from './Title';
-export { Paragraph } from './Paragraph';
-export { Loader } from './Loader';
-export { Output } from './Output';
-export { InputNumber } from './InputNumber';
+export { Button } from './button';
+export { Title } from './title';
+export { Paragraph } from './paragraph';
+export { Loader } from './loader';
+export { Output } from './output';
+export { InputNumber } from './input-number';
