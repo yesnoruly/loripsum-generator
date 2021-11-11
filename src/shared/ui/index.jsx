@@ -4,3 +4,4 @@ export { Paragraph } from './paragraph';
 export { Loader } from './loader';
 export { Output } from './output';
 export { InputNumber } from './input-number';
+export { Form } from './form';
