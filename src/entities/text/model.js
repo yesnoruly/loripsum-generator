@@ -7,3 +7,5 @@ export const getTextContentFx = createEffect((num = 1) => {
 
 export const $textContent = createStore([])
   .on(getTextContentFx.doneData, (_, data) => data);
+
+export const $textContentJoined = $textContent.map((arr) => arr.join(' '));
