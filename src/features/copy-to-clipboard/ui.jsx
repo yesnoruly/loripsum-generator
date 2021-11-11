@@ -1,8 +1,11 @@
 import React from 'react';
-// Use clipboard
+
 import { useCopyClipboard } from './lib';
-// Styled
+
 import styled from 'styled-components';
+
+import copy from './icon/copy.svg';
+import checkmark from './icon/checkmark.svg';
 
 export const CopyToClipboard = ({ data }) => {
   const [isCopied, setCopied] = useCopyClipboard(data, {
