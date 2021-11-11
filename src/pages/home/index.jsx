@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
-// Components
+import './index.css';
+
+import { useStore } from 'effector-react';
+
 import { CopyToClipboard } from '../../features/copy-to-clipboard';
 import { InputNumber } from '../../shared/ui';
 import { Button } from '../../shared/ui';
@@ -8,6 +11,8 @@ import { Output } from '../../shared/ui';
 import { Form } from '../../shared/ui';
 import { Loader } from '../../shared/ui';
 import { Paragraph } from '../../shared/ui';
+
+import { $textContent, $textContentJoined, getTextContentFx } from '../../entities/text';
 
 export const Home = () => {
   const textContent = useStore($textContent);
@@ -50,11 +55,11 @@ export const Home = () => {
 
       <Output $padding="37px" $marginTop="24px" $height="550px" $gap="32px" $center>
 
-        <CopyToClipboard data={textContentJoined} />
+        <CopyToClipboard data={textContentJoined}/>
 
         {
           isLoading
-            ? <Loader $width="5px" $color="var(--color-blue-light)" />
+            ? <Loader $width="5px" $color="var(--color-blue-light)"/>
             : (
               textContent.length > 0
                 ? textContent.map((item, index) => (
