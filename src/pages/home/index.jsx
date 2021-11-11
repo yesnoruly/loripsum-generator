@@ -4,13 +4,7 @@ import './index.css';
 import { useStore } from 'effector-react';
 
 import { CopyToClipboard } from '../../features/copy-to-clipboard';
-import { InputNumber } from '../../shared/ui';
-import { Button } from '../../shared/ui';
-import { Title } from '../../shared/ui';
-import { Output } from '../../shared/ui';
-import { Form } from '../../shared/ui';
-import { Loader } from '../../shared/ui';
-import { Paragraph } from '../../shared/ui';
+import { InputNumber, Button, Title, Output, Form, Loader, Paragraph } from '../../shared/ui';
 
 import { $textContent, $textContentJoined, getTextContentFx } from '../../entities/text';
 
