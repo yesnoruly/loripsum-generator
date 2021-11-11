@@ -1,9 +1,7 @@
-import {createStore, createEffect} from 'effector';
-import {mashapeApi} from '../../shared/api';
+import { createStore, createEffect } from 'effector';
+import { mashapeApi } from '../../shared/api/';
 
-export const getTextContentFx = createEffect((num = 1) => {
-  return mashapeApi.getTextContent(num)
-});
+export const getTextContentFx = createEffect((num = 1) => mashapeApi.getTextContent(num));
 
 export const $textContent = createStore([])
   .on(getTextContentFx.doneData, (_, data) => data);

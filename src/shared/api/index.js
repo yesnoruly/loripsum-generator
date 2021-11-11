@@ -1,1 +1,1 @@
-export * as mashapeApi from './mashape'
+export * as mashapeApi from './mashape';

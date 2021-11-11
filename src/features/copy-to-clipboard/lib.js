@@ -3,7 +3,7 @@ import copy from 'copy-to-clipboard';
 
 export const useCopyClipboard = (
   text,
-  options
+  options,
 ) => {
   const [isCopied, setIsCopied] = useState(false);
   const successDuration = options?.successDuration;
@@ -28,4 +28,4 @@ export const useCopyClipboard = (
       setIsCopied(didCopy);
     },
   ];
-}
+};
