@@ -23,7 +23,7 @@ export const Home = () => {
   };
 
   return (
-    <div className="app">
+    <div className="home">
 
       <Title $alignment="center" $color="var(--color-blue-darker)">Tired of boring lorem ipsum?</Title>
 
