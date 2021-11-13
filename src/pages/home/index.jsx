@@ -4,7 +4,7 @@ import './index.css';
 import { useStore } from 'effector-react';
 
 import {
-  Title, Output, Loader, Paragraph,
+  Title, Output, Loader, Paragraph, Empty,
 } from '../../shared/ui';
 import {
   $textContent, $textContentJoined, getTextContentFx, GenerateText,
@@ -42,7 +42,7 @@ export const Home = () => {
                     {item}
                   </Paragraph>
                 ))
-                : <p className="empty">😎</p>
+                : <Empty />
             )
         }
 
