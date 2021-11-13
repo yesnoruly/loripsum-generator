@@ -4,8 +4,8 @@ import { useCopyClipboard } from './lib';
 
 import styled from 'styled-components';
 
-import copy from './icon/copy.svg';
-import checkmark from './icon/checkmark.svg';
+import copy from './assets/copy.svg';
+import checkmark from './assets/checkmark.svg';
 
 export const CopyToClipboard = ({ data }) => {
   const [isCopied, setCopied] = useCopyClipboard(data, {
