@@ -12,24 +12,6 @@
   }
 }
 
-/* Form */
-
-.form {
-  display: grid;
-  grid-auto-flow: column;
-  justify-content: center;
-  align-items: center;
-  grid-gap: 12px;
-
-  margin-top: 31px;
-}
-
-@media (max-width: 362px) {
-  .form {
-    grid-auto-flow: row;
-  }
-}
-
 /* Empty */
 
 .empty {
