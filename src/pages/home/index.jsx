@@ -1,53 +1,27 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './index.css';
 
 import { useStore } from 'effector-react';
 
-import { CopyToClipboard } from '../../features/copy-to-clipboard';
 import {
-  InputNumber, Button, Title, Output, Form, Loader, Paragraph,
+  Title, Output, Loader, Paragraph,
 } from '../../shared/ui';
-
-import { $textContent, $textContentJoined, getTextContentFx } from '../../entities/text';
+import {
+  $textContent, $textContentJoined, getTextContentFx, GenerateText,
+} from '../../features/generate-text';
+import { CopyToClipboard } from '../../features/copy-to-clipboard';
 
 export const Home = () => {
   const textContent = useStore($textContent);
   const isLoading = useStore(getTextContentFx.pending);
   const textContentJoined = useStore($textContentJoined);
 
-  const [input, setInput] = useState('1');
-
-  const handleSubmit = (evt) => {
-    evt.preventDefault();
-    getTextContentFx(input);
-  };
-
   return (
     <div className="home">
 
       <Title $alignment="center" $color="var(--color-blue-darker)">Tired of boring lorem ipsum?</Title>
 
-      <Form onSubmit={handleSubmit} $marginTop="31px" $grid $gap="12px">
-
-        <InputNumber
-          labelText="Paragraphs:"
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-          min={1}
-          max={999}
-          $color="var(--color-blue-darker)"
-        />
-
-        <Button
-          type="submit"
-          $color="#FFFFFF"
-          $background="var(--color-blue-medium)"
-          $backgroundHover="var(--color-blue-lightest)"
-          $backgroundActive="var(--color-blue-darker)"
-        >
-          Generate
-        </Button>
-      </Form>
+      <GenerateText $marginTop="31px" $grid $gap="12px" />
 
       <Output $padding="37px" $marginTop="24px" $height="550px" $gap="32px" $center>
 
