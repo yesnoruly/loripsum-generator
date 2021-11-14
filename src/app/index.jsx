@@ -1,8 +1,8 @@
 import React from 'react';
-// Styles
 import './index.css';
-import { Home } from '../pages/home';
+
+import { Routing } from '../pages';
 
 export const App = () => (
-  <Home />
+  <Routing />
 );
