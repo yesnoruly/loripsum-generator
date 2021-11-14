@@ -1,13 +1,14 @@
-# Contributing to Smart Notes website <!-- omit in toc -->
+# Contributing to Smart Notes website
 
 👍🎉 Thanks for taking the time to contribute! 🎉👍
 
-## Summary <!-- omit in toc -->
+## Summary
 
 - [Code of conducts](#code-of-conducts)
 - [Issue and Pull Requests](#issue-and-pull-requests)
 - [Commit messages](#commit-messages)
 - [Project setup](#project-setup)
+- [Aliases](#aliases)
 - [Submitting changes](#submitting-changes)
 - [Deployment](#deployment)
 
@@ -33,21 +34,21 @@ We use the [Conventional Commits](https://www.conventionalcommits.org) specifica
 
 If you do need to set the project up locally yourself, feel free to follow these instructions:
 
-### System Requirements <!-- omit in toc -->
+### System Requirements
 
 - [Node.js](https://nodejs.org/en/) >= 16.0.0
 
-### Setup steps <!-- omit in toc -->
+### Setup steps
 
 1. Create [your own issue](https://github.com/yesnoruly/loripsum-generator/issues/new/) or visit the [Issue tracker](https://github.com/yesnoruly/loripsum-generator/issues) to find a list of open issues that need attention.
 2. Fork the repo. 
 3. Create your own branch (`my-feature`), then do this:
 
-#### `npm install`: <!-- omit in toc -->
+#### `npm install`:
 
 **Install the dependencies**
 
-#### `npm run dev`: <!-- omit in toc -->
+#### `npm run dev`:
 
 **Run the app, you can view the app by visiting `http://localhost:3000/`**
 
@@ -55,21 +56,34 @@ If you do need to set the project up locally yourself, feel free to follow these
 
 Other commands:
 
-#### `npm run build`: <!-- omit in toc -->
+#### `npm run build`:
 
 **Builds the app for production to the dist folder**
 
-#### `npm run serve`: <!-- omit in toc -->
+#### `npm run serve`:
 
 **Serves the production build from the dist folder.**
 
-#### `npm run eslint`: <!-- omit in toc -->
+#### `npm run eslint`:
 
 **Run ESLint**
 
-#### `npm run lint:fix`: <!-- omit in toc -->
+#### `npm run lint:fix`:
 
 **Run ESLint with fix**
+
+## Aliases
+
+> View [`jsconfig.json`](https://github.com/yesnoruly/loripsum-generator/blob/master/jsconfig.json) and [`vite.config.js#L8`](https://github.com/yesnoruly/loripsum-generator/blob/master/vite.config.js#L8)
+
+Base url: `src/` <br>
+To start using aliases before the path type: `@/`
+
+Example:
+
+```js
+import { Button } from '@/shared/ui';
+```
 
 ## Submitting changes
 1. Make sure that the eslint tests are passed.
