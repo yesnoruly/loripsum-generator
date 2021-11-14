@@ -1,8 +1,7 @@
 # Lorem ipsum generator 🐠
 
 ~~Lorem ipsum dolor sit amet, consecrated advising elite~~
-
-![App preview](https://i.imgur.com/keKO8hw.gif)
+![application preview](https://user-images.githubusercontent.com/64963734/141689810-545f5bcc-d55f-4166-ba30-a8e6cd0eeaf2.gif)
 
 [See demo](https://loripsum-generator.vercel.app)
 
