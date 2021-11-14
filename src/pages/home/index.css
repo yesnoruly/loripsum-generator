@@ -1,13 +1,13 @@
 /* App styles */
 
-.home {
+.homepage {
   padding: 80px 10px 0;
   margin: 0 auto;
   max-width: 880px;
 }
 
 @media (max-width: 550px) {
-  .home {
+  .homepage {
     padding-top: 30px;
   }
 }

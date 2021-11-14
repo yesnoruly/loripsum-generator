@@ -11,13 +11,13 @@ import {
 } from '../../features/generate-text';
 import { CopyToClipboard } from '../../features/copy-to-clipboard';
 
-export const Home = () => {
+export const HomePage = () => {
   const textContent = useStore($textContent);
   const isLoading = useStore(getTextContentFx.pending);
   const textContentJoined = useStore($textContentJoined);
 
   return (
-    <div className="home">
+    <div className="homepage">
 
       <Title $alignment="center" $color="var(--color-blue-darker)">Tired of boring lorem ipsum?</Title>
 
