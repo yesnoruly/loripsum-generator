@@ -22,7 +22,6 @@ const StyledLoader = styled.span`
   border-radius: 50%;
   animation: ${rotation} 1s linear infinite;
   transition: .5s ease;
-
   border: ${(props) => props.$width || '3px'} solid ${(props) => props.$background || '#000'};
   border-bottom-color: ${(props) => props.$color || '#666'};
 `;

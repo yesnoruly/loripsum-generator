@@ -2,8 +2,14 @@ import React from 'react';
 // Styled
 import styled from 'styled-components';
 
-export const InputTNumber = ({
-  onChange, value, max, min, labelText, $size, $color,
+export const InputNumber = ({
+  onChange,
+  value,
+  max,
+  min,
+  labelText,
+  $size,
+  $color,
 }) => (
   <StyledLabel $size={$size} $color={$color}>
     {labelText}
@@ -22,7 +28,6 @@ const StyledLabel = styled.label`
   line-height: 23px;
   letter-spacing: 1.6px;
   color: ${(props) => props.$color || '#000000'};
-
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: min-content;
@@ -36,17 +41,12 @@ const StyledInput = styled.input.attrs({
 })`
   height: 30px;
   max-width: 92px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   font-size: ${(props) => props.$size || '20px'};
-
   line-height: 14px;
-
   border-radius: 4px;
   padding: 0 5px;
-
   color: ${(props) => props.$color || '#000000'};
 `;

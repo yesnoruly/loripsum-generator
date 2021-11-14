@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 import copy from 'copy-to-clipboard';
 
-export function useCopyClipboard(
+export const useCopyClipboard = (
   text,
   options,
-) {
+) => {
   const [isCopied, setIsCopied] = useState(false);
   const successDuration = options?.successDuration;
 
@@ -28,4 +28,4 @@ export function useCopyClipboard(
       setIsCopied(didCopy);
     },
   ];
-}
+};

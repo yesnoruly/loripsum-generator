@@ -9,7 +9,6 @@
 ## Technologies ⚙️
 
 - ReactJS
-- SCSS
 - Styled components
 - [Effector ☄️](https://effector.dev)
 

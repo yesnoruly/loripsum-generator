@@ -1,7 +1,3 @@
-/* Fonts */
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
 /* Reset */
 
 * {
@@ -65,29 +61,4 @@ img {
 h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
   font-weight: 400;
-}
-
-/* Globals */
-
-body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  line-height: 24px;
-  color: #000;
-  background: #E5E5E5;
-}
-
-/* Css vars */
-
-:root {
-  --color-blue-lightest: #5DBAE9;
-  --color-blue-light: #2481C4;
-  --color-blue-medium: #368ac4;
-  --color-blue-dark: #617D98;
-  --color-blue-darker: #063251;
-
-  --color-grey-lightest: #f3f4f6;
-  --color-grey-light: #D3D4D6;
-  --color-grey-medium: #ddddde;
-  --color-grey-dark: #c9c9c9;
 }

@@ -19,12 +19,9 @@ const StyledTitle = styled.h2`
   font-size: 28px;
   line-height: 33px;
   text-transform: ${(props) => props.$transform || 'uppercase'};
-
   color: ${(props) => props.$color || '#000000'};
-
   @media (max-width: 550px) {
     font-size: 25px;
   }
-
   text-align: ${(props) => props.$alignment || 'left'};
 `;
