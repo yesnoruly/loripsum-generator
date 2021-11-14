@@ -5,11 +5,11 @@ import { useStore } from 'effector-react';
 
 import {
   Title, Output, Loader, Paragraph, Empty,
-} from '../../shared/ui';
+} from '@/shared/ui';
 import {
   $textContent, $textContentJoined, getTextContentFx, GenerateText,
-} from '../../features/generate-text';
-import { CopyToClipboard } from '../../features/copy-to-clipboard';
+} from '@/features/generate-text';
+import { CopyToClipboard } from '@/features/copy-to-clipboard';
 
 export const HomePage = () => {
   const textContent = useStore($textContent);
