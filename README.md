@@ -25,4 +25,5 @@
 ## Roadmap
 
 - [ ] Dark theme ([#5](https://github.com/yesnoruly/loripsum-generator/issues/5))
-- [ ] Find an api with more extensive functionality
+- [ ] Use another api with more extensive
+  functionality ([#12](https://github.com/yesnoruly/loripsum-generator/issues/12))
