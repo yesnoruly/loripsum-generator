@@ -1,12 +1,16 @@
 import React from 'react';
+import shmil from './assets/shmil.png';
 
 import styled from 'styled-components';
 
 export const Empty = () => (
   <StyledEmpty className="empty">
-    <a href="https://t.me/addstickers/ShmelyaTheCat"><img
-      src="https://user-images.githubusercontent.com/64963734/141657081-90547c0c-52ee-4321-a6a0-fb78c5a21dde.png"
-      width="250" height="250" alt="Just shmil" /></a>
+    <a href="https://t.me/addstickers/ShmelyaTheCat">
+      <img
+      src={shmil}
+      loading="lazy"
+      width="250" height="250" alt="Just shmil" />
+    </a>
   </StyledEmpty>
 );
 
@@ -18,7 +22,8 @@ const StyledEmpty = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
   a {
     cursor: default;
   }
-`
+`;
