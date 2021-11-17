@@ -6,3 +6,4 @@ export { Output } from './output';
 export { InputNumber } from './input-number';
 export { Form } from './form';
 export { Empty } from './empty';
+export { CopyToClipboard } from './copy-clipboard';
