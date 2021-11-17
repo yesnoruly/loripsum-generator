@@ -1,5 +1,10 @@
 # Lorem ipsum generator 🐠
 
+<!-- Badges -->
+
+[![FeatureSliced](https://img.shields.io/badge/Powered%20by-%F0%9F%8D%B0%20Feature%20Sliced-%235c9cb5)](https://feature-sliced.design/)
+[![GitHub deployments](https://img.shields.io/github/deployments/yesnoruly/loripsum-generator/production?label=vercel&logo=vercel&logoColor=white)](https://github.com/yesnoruly/loripsum-generator/deployments/activity_log?environment=Production)
+
 ~~Lorem ipsum dolor sit amet, consecrated advising elite~~
 
 ![application preview](https://user-images.githubusercontent.com/64963734/141689810-545f5bcc-d55f-4166-ba30-a8e6cd0eeaf2.gif)
