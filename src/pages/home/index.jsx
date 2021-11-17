@@ -1,53 +1,17 @@
 import React from 'react';
 import './index.css';
 
-import { useStore } from 'effector-react';
+import { Title } from '@/shared/ui';
+import { GenerateTextForm, View } from '@/features/generate-text';
 
-import {
-  Title, Output, Loader, Paragraph, Empty,
-} from '@/shared/ui';
-import {
-  $textContent, $textContentJoined, getTextContentFx, GenerateText,
-} from '@/features/generate-text';
-import { CopyToClipboard } from '@/features/copy-to-clipboard';
+export const HomePage = () => (
+  <div className="homepage">
 
-export const HomePage = () => {
-  const textContent = useStore($textContent);
-  const isLoading = useStore(getTextContentFx.pending);
-  const textContentJoined = useStore($textContentJoined);
+    <Title $alignment="center" $color="var(--color-blue-darker)">Tired of boring lorem ipsum?</Title>
 
-  return (
-    <div className="homepage">
+    <GenerateTextForm $marginTop="31px" $grid $gap="12px"/>
 
-      <Title $alignment="center" $color="var(--color-blue-darker)">Tired of boring lorem ipsum?</Title>
+    <View $padding="37px" $marginTop="24px" $height="550px" $gap="32px" $center/>
 
-      <GenerateText $marginTop="31px" $grid $gap="12px" />
-
-      <Output $padding="37px" $marginTop="24px" $height="550px" $gap="32px" $center>
-
-        <CopyToClipboard data={textContentJoined} />
-
-        {
-          isLoading
-            ? <Loader $width="5px" $color="var(--color-blue-light)" />
-            : (
-              textContent.length > 0
-                ? textContent.map((item, index) => (
-                  <Paragraph
-                    key={index}
-                    $center
-                    $size="20px"
-                    $color="var(--color-blue-dark)"
-                  >
-                    {item}
-                  </Paragraph>
-                ))
-                : <Empty />
-            )
-        }
-
-      </Output>
-
-    </div>
-  );
-};
+  </div>
+);
