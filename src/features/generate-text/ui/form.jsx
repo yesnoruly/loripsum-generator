@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 
 import { Button, Form, InputNumber } from '@/shared/ui';
-import { getTextContentFx } from './model';
+import { getTextContentFx } from '../model';
 
-export const GenerateText = (props) => {
+export const GenerateTextForm = (props) => {
   const [input, setInput] = useState('1');
 
   const handleSubmit = (evt) => {
