@@ -5,11 +5,20 @@ import styled from 'styled-components';
 import copy from './assets/copy.svg';
 import checkmark from './assets/checkmark.svg';
 
-export const CopyClipboard = ({ isCopied, setCopied }) => (
+import { useCopyClipboard } from './hook'
+
+export const CopyClipboard = ({ data }) => {
+
+  const [isCopied, setCopied] = useCopyClipboard(data, {
+    successDuration: 1500
+  });
+
+  return (
     <StyledCopyClipboard onClick={setCopied}>
       <img src={isCopied ? checkmark : copy} alt="" />
     </StyledCopyClipboard>
-);
+  )
+};
 
 const StyledCopyClipboard = styled.button`
   background-color: var(--color-grey-lightest);

@@ -4,8 +4,8 @@ import { useStore } from 'effector-react';
 
 import { $textContent, $textContentJoined, getTextContentFx } from '../model';
 
-import { CopyClipboard, Empty, Loader, Output, Paragraph } from '@/shared/ui';
-import { useCopyClipboard } from '@/shared/lib';
+import { Empty, Loader, Output, Paragraph } from '@/shared/ui';
+import { CopyClipboard } from '@/shared/lib';
 
 export const GenerateTextView = (props) => {
 
@@ -13,14 +13,10 @@ export const GenerateTextView = (props) => {
   const isLoading = useStore(getTextContentFx.pending);
   const textContentJoined = useStore($textContentJoined);
 
-  const [isCopied, setCopied] = useCopyClipboard(textContentJoined, {
-    successDuration: 1500
-  });
-
   return (
     <Output {...props}>
 
-      <CopyClipboard setCopied={setCopied} isCopied={isCopied} />
+      <CopyClipboard data={textContentJoined} />
 
       {
         isLoading
