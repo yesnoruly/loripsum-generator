@@ -7,7 +7,7 @@ import { $textContent, $textContentJoined, getTextContentFx } from '../model';
 import { CopyClipboard, Empty, Loader, Output, Paragraph } from '@/shared/ui';
 import { useCopyClipboard } from '@/shared/lib';
 
-export const View = (props) => {
+export const GenerateTextView = (props) => {
 
   const textContent = useStore($textContent);
   const isLoading = useStore(getTextContentFx.pending);
