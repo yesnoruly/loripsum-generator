@@ -28,4 +28,3 @@
 - [ ] Use another api with more extensive
   functionality ([#12](https://github.com/yesnoruly/loripsum-generator/issues/12))
 - [ ] Add a content generation interface as html ([#13](https://github.com/yesnoruly/loripsum-generator/issues/13))
-- [ ] Add the ability to edit output holder ([#14](https://github.com/yesnoruly/loripsum-generator/issues/14))
