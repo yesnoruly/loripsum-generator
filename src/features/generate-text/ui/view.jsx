@@ -4,7 +4,7 @@ import { useStore } from 'effector-react';
 
 import { $textContent, $textContentJoined, getTextContentFx } from '../model';
 
-import { CopyToClipboard, Empty, Loader, Output, Paragraph } from '@/shared/ui';
+import { CopyClipboard, Empty, Loader, Output, Paragraph } from '@/shared/ui';
 import { useCopyClipboard } from '@/shared/lib';
 
 export const View = (props) => {
@@ -20,7 +20,7 @@ export const View = (props) => {
   return (
     <Output {...props}>
 
-      <CopyToClipboard setCopied={setCopied} isCopied={isCopied} />
+      <CopyClipboard setCopied={setCopied} isCopied={isCopied} />
 
       {
         isLoading
