@@ -1,0 +1,14 @@
+.form {
+  margin-top: 35px;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+@media (max-width: 362px) {
+  .form {
+    grid-auto-flow: row;
+  }
+}

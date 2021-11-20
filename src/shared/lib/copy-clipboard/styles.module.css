@@ -1,0 +1,24 @@
+.button {
+  background-color: var(--color-grey-lightest);
+  border-radius: 4px;
+  border: 1px solid var(--color-grey-light);
+  padding: 5px;
+  margin: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: background-color .3s ease;
+}
+
+.button:hover {
+  background-color: var(--color-grey-medium);
+}
+
+.button:active {
+  background-color: var(--color-grey-dark);
+}
+
+.button img {
+  width: 25px;
+  height: 25px;
+}

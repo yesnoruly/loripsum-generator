@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Button, Form, InputNumber } from '@/shared/ui';
 import { getTextContentFx } from '../model';
 
-export const GenerateTextForm = (props) => {
+export const GenerateTextForm = () => {
   const [input, setInput] = useState('1');
 
   const handleSubmit = (evt) => {
@@ -12,7 +12,7 @@ export const GenerateTextForm = (props) => {
   };
 
   return (
-    <Form onSubmit={handleSubmit} {...props}>
+    <Form onSubmit={handleSubmit}>
 
       <InputNumber
         labelText="Paragraphs:"
@@ -20,18 +20,9 @@ export const GenerateTextForm = (props) => {
         onChange={(e) => setInput(e.target.value)}
         min={1}
         max={999}
-        $color="var(--color-blue-darker)"
       />
 
-      <Button
-        type="submit"
-        $color="#FFFFFF"
-        $background="var(--color-blue-medium)"
-        $backgroundHover="var(--color-blue-lightest)"
-        $backgroundActive="var(--color-blue-darker)"
-      >
-        Generate
-      </Button>
+      <Button type="submit">Generate</Button>
     </Form>
   );
 };

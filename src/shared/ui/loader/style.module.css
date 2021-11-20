@@ -1,0 +1,19 @@
+.span {
+  display: inline-flex;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  animation: rotation 1s linear infinite;
+  transition: .5s ease;
+  border: 5px solid var(--color-blue-darker);
+  border-bottom-color: var(--color-blue-light);
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

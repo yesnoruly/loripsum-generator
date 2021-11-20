@@ -7,29 +7,24 @@ import { $textContent, $textContentJoined, getTextContentFx } from '../model';
 import { Empty, Loader, Output, Paragraph } from '@/shared/ui';
 import { CopyClipboard } from '@/shared/lib';
 
-export const GenerateTextView = (props) => {
+export const GenerateTextView = () => {
 
   const textContent = useStore($textContent);
   const isLoading = useStore(getTextContentFx.pending);
   const textContentJoined = useStore($textContentJoined);
 
   return (
-    <Output {...props}>
+    <Output>
 
       <CopyClipboard data={textContentJoined} />
 
       {
         isLoading
-          ? <Loader $width="5px" $color="var(--color-blue-light)" />
+          ? <Loader />
           : (
             textContent.length > 0
               ? textContent.map((item, index) => (
-                <Paragraph
-                  key={index}
-                  $center
-                  $size="20px"
-                  $color="var(--color-blue-dark)"
-                >
+                <Paragraph key={index}>
                   {item}
                 </Paragraph>
               ))
@@ -38,5 +33,5 @@ export const GenerateTextView = (props) => {
       }
 
     </Output>
-  )
-}
+  );
+};
