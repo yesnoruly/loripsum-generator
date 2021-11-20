@@ -3,7 +3,7 @@
 <!-- Badges -->
 
 [![FeatureSliced](https://img.shields.io/badge/Powered%20by-%F0%9F%8D%B0%20Feature%20Sliced-%235c9cb5)](https://feature-sliced.design/)
-[![GitHub deployments](https://img.shields.io/github/deployments/yesnoruly/loripsum-generator/production?label=vercel&logo=vercel&logoColor=white)](https://github.com/yesnoruly/loripsum-generator/deployments/activity_log?environment=Production)
+[![GitHub deployments](https://img.shields.io/github/deployments/yesnoruly/loripsum-generator/Production?label=vercel&logo=vercel)](https://github.com/yesnoruly/loripsum-generator/deployments/activity_log?environment=Production)
 
 ~~Lorem ipsum dolor sit amet, consecrated advising elite~~
 
