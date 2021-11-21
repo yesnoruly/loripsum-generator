@@ -15,6 +15,7 @@ export const GenerateTextForm = () => {
     <Form onSubmit={handleSubmit}>
 
       <InputNumber
+        htmlFor="Generate text"
         labelText="Paragraphs:"
         value={input}
         onChange={(e) => setInput(e.target.value)}

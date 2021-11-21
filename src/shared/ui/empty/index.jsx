@@ -2,7 +2,7 @@ import React from 'react';
 
 import shmil from './assets/shmil.png';
 
-import s from './style.module.css'
+import s from './style.module.css';
 
 export const Empty = () => (
   <span className={s.empty}>
@@ -10,7 +10,8 @@ export const Empty = () => (
       <img
         src={shmil}
         loading="lazy"
-        width="250" height="250"
+        width="250"
+        height="250"
         alt="Just shmil"
       />
     </a>

@@ -6,4 +6,4 @@ export const Routing = () => (
   <>
     <HomePage />
   </>
-)
+);
