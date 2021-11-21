@@ -1,9 +1,8 @@
 import React from 'react';
-
 import { useStore } from 'effector-react';
-
+// Models
 import { $textContent, $textContentJoined, getTextContentFx } from '../model';
-
+// Components
 import {
   Empty, Loader, Output, Paragraph,
 } from '@/shared/ui';

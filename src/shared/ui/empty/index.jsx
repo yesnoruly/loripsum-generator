@@ -1,7 +1,7 @@
 import React from 'react';
-
+// Assets
 import shmil from './assets/shmil.png';
-
+// Styles
 import s from './style.module.css';
 
 export const Empty = () => (

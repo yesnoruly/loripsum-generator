@@ -1,7 +1,6 @@
-// React
 import React from 'react';
 import ReactDOM from 'react-dom';
-// Components
+// Application
 import { App } from './app';
 
 ReactDOM.render(

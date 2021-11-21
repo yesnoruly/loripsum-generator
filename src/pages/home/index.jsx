@@ -1,7 +1,7 @@
 import React from 'react';
-
+// Styles
 import './styles.css';
-
+// Components
 import { Title } from '@/shared/ui';
 import { GenerateTextForm, GenerateTextView } from '@/features/generate-text';
 

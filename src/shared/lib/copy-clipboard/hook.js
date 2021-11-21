@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+// Lib
 import copy from 'copy-to-clipboard';
 
 export const useCopyClipboard = (

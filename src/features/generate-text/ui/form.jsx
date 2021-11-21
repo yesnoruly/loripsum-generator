@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-
+// Components
 import { Button, Form, InputNumber } from '@/shared/ui';
+// Model
 import { getTextContentFx } from '../model';
 
 export const GenerateTextForm = () => {
