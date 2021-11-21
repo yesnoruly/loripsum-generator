@@ -28,6 +28,10 @@
     "object-curly-spacing": "warn",
     "react/no-array-index-key": "off",
     "react/prop-types": "off",
-    "linebreak-style": "off"
+    "linebreak-style": "off",
+    "import/no-unresolved": "off",
+    "jsx-a11y/label-has-associated-control": ["error", {
+      "assert": "nesting"
+    }]
   }
 }
