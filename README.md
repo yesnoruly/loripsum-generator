@@ -7,7 +7,7 @@
 
 ~~Lorem ipsum dolor sit amet, consecrated advising elite~~
 
-![application preview](https://user-images.githubusercontent.com/64963734/141689810-545f5bcc-d55f-4166-ba30-a8e6cd0eeaf2.gif)
+![Application preview](https://user-images.githubusercontent.com/64963734/141689810-545f5bcc-d55f-4166-ba30-a8e6cd0eeaf2.gif)
 
 [See demo](https://loripsum-generator.vercel.app)
 
@@ -21,7 +21,7 @@
 
 **Run the app, you can view the app by visiting `http://localhost:3000/`**
 
-## Roadmap
+## Roadmap 🗺️
 
 - [ ] Dark theme ([#5](https://github.com/yesnoruly/loripsum-generator/issues/5))
 - [ ] Use another api with more extensive
@@ -37,9 +37,9 @@
 - **Build**: `vitejs`
 
 <div align="center">
-<img title="react" alt="react" height=60 src="https://cdn.auth0.com/blog/react-js/react.png"/>
-<img title="eslint (Super linting from @martis-git)" alt="eslint" height=60 src="https://d33wubrfki0l68.cloudfront.net/204482ca413433c80cd14fe369e2181dd97a2a40/092e2/assets/img/logo.svg"/>
-<img title="Effector, the state manager" alt="effector" height=60 src="https://user-images.githubusercontent.com/64963734/142739108-1cfe5eb5-aa8f-4b05-bbad-11e3a3095591.jpg"/>
-<img title="Vercel" alt="vercel" height=60 src="https://cardify.vercel.app/api/badges?border=false&borderColor=%23ddd&borderWidth=2&iconColor=&icons=vercel&preset=default&shadow=false&width=60"/>
-<img title="Vitejs" alt="vitejs" height=60 src="https://user-images.githubusercontent.com/64963734/142739293-6deca66b-d45e-4953-b75c-ff8c32605b65.png"/>
+  <img title="react" alt="react" height=60 src="https://cdn.auth0.com/blog/react-js/react.png"/>
+  <img title="eslint (Super linting from @martis-git)" alt="eslint" height=60 src="https://d33wubrfki0l68.cloudfront.net/204482ca413433c80cd14fe369e2181dd97a2a40/092e2/assets/img/logo.svg"/>
+  <img title="Effector, the state manager" alt="effector" height=60 src="https://user-images.githubusercontent.com/64963734/142739108-1cfe5eb5-aa8f-4b05-bbad-11e3a3095591.jpg"/>
+  <img title="Vercel" alt="vercel" height=60 src="https://cardify.vercel.app/api/badges?border=false&borderColor=%23ddd&borderWidth=2&iconColor=&icons=vercel&preset=default&shadow=false&width=60"/>
+  <img title="Vitejs" alt="vitejs" height=60 src="https://user-images.githubusercontent.com/64963734/142739293-6deca66b-d45e-4953-b75c-ff8c32605b65.png"/>
 </div>
