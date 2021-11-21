@@ -32,6 +32,10 @@
   functionality ([#12](https://github.com/yesnoruly/loripsum-generator/issues/12))
 - [ ] Add a content generation interface as html ([#13](https://github.com/yesnoruly/loripsum-generator/issues/13))
 
+## Design
+
+[In Figma](https://www.figma.com/file/fm6hLuN9CSoN302u5YYXJl/Lorem-ipsum-generator?node-id=0%3A1)
+
 ## Tech stack ⚙️
 
 - **UI**: `react`, `css modules`
