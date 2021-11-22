@@ -1,7 +1,7 @@
 .button {
-  background-color: var(--color-grey-lightest);
+  background-color: var(--c-secondary-lightest);
   border-radius: 4px;
-  border: 1px solid var(--color-grey-light);
+  border: 1px solid var(--c-secondary-light);
   padding: 5px;
   margin: 5px;
   position: absolute;
@@ -11,11 +11,11 @@
 }
 
 .button:hover {
-  background-color: var(--color-grey-medium);
+  background-color: var(--c-secondary-medium);
 }
 
 .button:active {
-  background-color: var(--color-grey-dark);
+  background-color: var(--c-secondary-dark);
 }
 
 .button img {

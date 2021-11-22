@@ -1,6 +1,6 @@
 .paragraph {
   font-size: 20px;
   line-height: 24px;
-  color: var(--color-blue-dark);
+  color: var(--c-primary-dark);
   text-align: center;
 }

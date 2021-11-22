@@ -5,5 +5,5 @@ body {
   font-size: 14px;
   line-height: 24px;
   color: #000;
-  background: var(--color-grey-medium);
+  background: var(--c-secondary-medium);
 }
