@@ -1,13 +1,3 @@
-.empty {
-  color: #617D98;
-  text-align: center;
-  font-size: 30px;
-  line-height: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .empty a {
   cursor: default;
 }
