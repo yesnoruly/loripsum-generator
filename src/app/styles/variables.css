@@ -1,5 +1,7 @@
 /* Variables */
 
+/* Light */
+
 :root {
   --c-background: #ddddde;
 
@@ -13,6 +15,8 @@
   --c-secondary-3: #ddddde;
   --c-secondary-4: #ffffff;
 }
+
+/* Dark */
 
 :root.dark {
   --c-background: #2E2E2F;
