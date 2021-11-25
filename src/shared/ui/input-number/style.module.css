@@ -20,5 +20,6 @@
   line-height: 14px;
   border-radius: 4px;
   padding: 0 5px;
+  background: var(--c-secondary-4);
   color: var(--c-primary-4);
 }
