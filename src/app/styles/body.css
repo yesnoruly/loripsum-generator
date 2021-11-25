@@ -4,6 +4,5 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   line-height: 24px;
-  color: #000;
-  background: var(--c-secondary-medium);
+  background: var(--c-background);
 }

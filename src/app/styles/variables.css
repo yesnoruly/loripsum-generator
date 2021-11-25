@@ -1,14 +1,15 @@
 /* Variables */
 
 :root {
-  --c-primary-lightest: #5DBAE9;
-  --c-primary-light: #2481C4;
-  --c-primary-medium: #368ac4;
-  --c-primary-dark: #617D98;
-  --c-primary-darker: #063251;
+  --c-background: #ddddde;
 
-  --c-secondary-lightest: #f3f4f6;
-  --c-secondary-light: #D3D4D6;
-  --c-secondary-medium: #ddddde;
-  --c-secondary-dark: #c9c9c9;
+  --c-primary-1: #5dbae9;
+  --c-primary-2: #368ac4;
+  --c-primary-3: #617d98;
+  --c-primary-4: #063251;
+
+  --c-secondary-1: #f3f4f6;
+  --c-secondary-2: #d3d4d6;
+  --c-secondary-3: #ddddde;
+  --c-secondary-4: #ffffff;
 }

@@ -7,14 +7,14 @@
   font-size: 20px;
   line-height: 14px;
   color: #ffffff;
-  background: var(--c-primary-medium);
+  background: var(--c-primary-2);
   transition: background .2s ease;
 }
 
 .button:hover {
-  background: var(--c-primary-lightest);
+  background: var(--c-primary-1);
 }
 
 .button:active {
-  background: var(--c-primary-darker);
+  background: var(--c-primary-4);
 }
