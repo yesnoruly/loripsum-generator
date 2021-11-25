@@ -13,3 +13,17 @@
   --c-secondary-3: #ddddde;
   --c-secondary-4: #ffffff;
 }
+
+:root.dark {
+  --c-background: #2E2E2F;
+
+  --c-primary-1: #5dbae9;
+  --c-primary-2: #368ac4;
+  --c-primary-3: #9CC9F3;
+  --c-primary-4: #AEDAF9;
+
+  --c-secondary-1: #353739;
+  --c-secondary-2: #171717;
+  --c-secondary-3: #444444;
+  --c-secondary-4: #0D0D0D;
+}
