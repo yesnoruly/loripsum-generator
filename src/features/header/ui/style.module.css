@@ -1,5 +1,11 @@
 .header {
   display: flex;
   justify-content: flex-end;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding-bottom: 15px;
+  }
 }
