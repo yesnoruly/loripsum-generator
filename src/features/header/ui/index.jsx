@@ -7,7 +7,6 @@ import { ThemeSwitch } from '@/shared/ui';
 import { useDarkTheme } from '@/shared/lib';
 
 export const Header = () => {
-
   const [dark, toggleDarkMode] = useDarkTheme();
 
   const handleClick = () => {
@@ -18,5 +17,5 @@ export const Header = () => {
     <header className={s.header}>
       <ThemeSwitch handleClick={handleClick} state={dark} />
     </header>
-  )
-}
+  );
+};

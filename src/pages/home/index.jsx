@@ -6,19 +6,16 @@ import { Title } from '@/shared/ui';
 import { GenerateTextForm, GenerateTextView } from '@/features/generate-text';
 import { Header } from '@/features/header';
 
-export const HomePage = () => {
+export const HomePage = () => (
+  <div className="homepage">
 
-  return (
-    <div className="homepage">
+    <Header />
 
-      <Header />
+    <Title>Tired of boring lorem ipsum?</Title>
 
-      <Title>Tired of boring lorem ipsum?</Title>
+    <GenerateTextForm />
 
-      <GenerateTextForm />
+    <GenerateTextView />
 
-      <GenerateTextView />
-
-    </div>
-  )
-};
+  </div>
+);

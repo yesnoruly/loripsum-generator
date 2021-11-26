@@ -1,17 +1,17 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
 export const useDarkTheme = () => {
   const [dark, setDark] = useState(
-    localStorage.getItem("theme") === "dark" ? true : false
+    localStorage.getItem('theme') === 'dark',
   );
 
   useEffect(() => {
     if (dark) {
-      document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
+      document.documentElement.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
     } else {
-      document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
+      document.documentElement.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
     }
   }, [dark]);
 
@@ -20,4 +20,4 @@ export const useDarkTheme = () => {
   };
 
   return [dark, toggleDarkMode];
-}
+};

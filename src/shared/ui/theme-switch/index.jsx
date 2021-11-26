@@ -5,9 +5,9 @@ import moon from './assets/moon.svg';
 
 export const ThemeSwitch = ({
   state,
-  handleClick
+  handleClick,
 }) => (
-  <button onClick={handleClick}>
+  <button type="button" onClick={handleClick}>
     <img src={state ? sun : moon} alt="" width="30" height="30" />
   </button>
 );
