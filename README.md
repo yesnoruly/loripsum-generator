@@ -41,7 +41,7 @@
 - **UI**: `react`, `css modules`
 - **State manager**: [`effector ☄`](https://effector.dev)
 - **Tests**: `eslint`
-- **CI/CD**: `vercel`
+- **Deploy**: `vercel`
 - **Build**: `vitejs`
 
 <div align="center">
