@@ -1,11 +1,14 @@
 import { defineConfig } from 'vite';
 import reactRefresh from '@vitejs/plugin-react-refresh';
-import path from 'path';
+import { ViteAliases } from 'vite-aliases';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  resolve: {
-    alias: [{ find: '@', replacement: path.resolve(__dirname, '/src') }],
-  },
-  plugins: [reactRefresh()]
+  plugins: [
+    reactRefresh(),
+    ViteAliases({
+      dir: 'src',
+      prefix: '@',
+    })
+  ]
 });
