@@ -4,7 +4,7 @@ import './styles.css';
 // Components
 import { Title } from '@/shared/ui';
 import { GenerateTextForm, GenerateTextView } from '@/features/generate-text';
-import { Header } from '@/features/header';
+import { Header } from '@/widgets/header';
 
 export const HomePage = () => (
   <div className="homepage">
