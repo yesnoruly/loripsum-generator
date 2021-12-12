@@ -9,6 +9,7 @@
   color: #ffffff;
   background: var(--c-primary-2);
   transition: background .2s ease;
+  border: 0;
 }
 
 .button:hover {

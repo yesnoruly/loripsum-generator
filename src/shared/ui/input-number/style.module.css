@@ -22,4 +22,5 @@
   padding: 0 5px;
   background: var(--c-secondary-4);
   color: var(--c-primary-4);
+  border: 0;
 }
