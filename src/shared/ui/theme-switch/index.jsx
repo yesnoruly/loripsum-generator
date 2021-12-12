@@ -3,7 +3,7 @@ import React from 'react';
 import sun from './assets/sun.svg';
 import moon from './assets/moon.svg';
 // Styles
-import s from './style.module.css'
+import s from './style.module.css';
 
 export const ThemeSwitch = ({
   state,
