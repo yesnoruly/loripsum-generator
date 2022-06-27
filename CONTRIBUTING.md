@@ -1,4 +1,4 @@
-# Contributing to Smart Notes website
+# Contributing to Lorem Ipsum Generator website
 
 👍🎉 Thanks for taking the time to contribute! 🎉👍
 
