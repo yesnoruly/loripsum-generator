@@ -17,11 +17,11 @@
 
 ## Quick start 🏎️
 
-#### `npm install`:
+#### `pnpm install`:
 
 **Install the dependencies**
 
-#### `npm run dev`:
+#### `pnpm run dev`:
 
 **Run the app, you can view the app by visiting `http://localhost:3000/`**
 

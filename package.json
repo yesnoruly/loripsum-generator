@@ -10,7 +10,8 @@
     "build": "vite build",
     "serve": "vite preview",
     "lint": "eslint **/*.{js,jsx}",
-    "lint:fix": "eslint **/*.{js,jsx} --fix"
+    "lint:fix": "eslint **/*.{js,jsx} --fix",
+    "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
     "copy-to-clipboard": "^3.3.1",
