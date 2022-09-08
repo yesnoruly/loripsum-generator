@@ -6,4 +6,3 @@ export { Output } from './output';
 export { InputNumber } from './input-number';
 export { Form } from './form';
 export { Empty } from './empty';
-export { ThemeSwitch } from './theme-switch';

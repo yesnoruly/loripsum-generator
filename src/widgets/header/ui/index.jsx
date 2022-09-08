@@ -2,9 +2,9 @@ import React from 'react';
 // Style
 import s from './style.module.css';
 // Components
-import { ThemeSwitch } from '@/shared/ui';
+import { ThemeSwitch } from '@/features/dark-mode';
 // Hook
-import { useDarkTheme } from '@/shared/lib';
+import { useDarkTheme } from '@/features/dark-mode';
 
 export const Header = () => {
   const [dark, toggleDarkMode] = useDarkTheme();
