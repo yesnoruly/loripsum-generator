@@ -18,19 +18,15 @@ export const GenerateTextView = () => {
 
       <CopyClipboard data={textContentJoined} />
 
-      {
-        isLoading
-          ? <Loader />
-          : (
-            textContent.length > 0
-              ? textContent.map((item, index) => (
-                <Paragraph key={index}>
-                  {item}
-                </Paragraph>
-              ))
-              : <Empty />
-          )
-      }
+      {(() => {
+        if (isLoading) return <Loader />;
+
+        if (textContent.length > 0) {
+          return textContent.map((item, index) => <Paragraph key={index}>{item}</Paragraph>);
+        }
+
+        return <Empty />;
+      })()}
 
     </Output>
   );
