@@ -21,7 +21,7 @@ export const GenerateTextForm = () => {
         value={input}
         onChange={(e) => setInput(e.target.value)}
         min={1}
-        max={999}
+        max={15}
       />
 
       <Button type="submit">Generate</Button>
