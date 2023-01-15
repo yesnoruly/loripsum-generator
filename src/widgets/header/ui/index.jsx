@@ -1,10 +1,8 @@
 import React from 'react';
 // Style
 import s from './style.module.css';
-// Components
-import { ThemeSwitch } from '@/features/dark-mode';
 // Hook
-import { useDarkTheme } from '@/features/dark-mode';
+import { useDarkTheme, ThemeSwitch } from '@/features/switch-theme';
 
 export const Header = () => {
   const [dark, toggleDarkMode] = useDarkTheme();
