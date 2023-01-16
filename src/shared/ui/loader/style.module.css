@@ -5,8 +5,8 @@
   border-radius: 50%;
   animation: rotation 1s linear infinite;
   transition: .5s ease;
-  border: 5px solid var(--c-primary-4);
-  border-bottom-color: var(--c-primary-2);
+  border: 5px solid var(--c-text-2);
+  border-bottom-color: var(--c-primary);
 }
 
 @keyframes rotation {

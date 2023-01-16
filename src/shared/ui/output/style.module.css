@@ -1,6 +1,6 @@
 .output {
-  background: var(--c-secondary-4);
-  box-shadow: 4px 4px 23px -3px var(--c-secondary-2);
+  background: var(--c-gray-4);
+  box-shadow: 4px 4px 23px -3px var(--c-gray-2);
   border-radius: 4px;
   padding: 37px;
   margin-top: 24px;
