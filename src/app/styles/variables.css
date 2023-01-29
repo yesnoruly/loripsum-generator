@@ -3,6 +3,7 @@
 /* Light */
 
 :root {
+  color-scheme: light;
   --c-background: #ddddde;
 
   --c-primary-hover: #5dbae9;
@@ -19,6 +20,8 @@
 /* Dark */
 
 :root.dark {
+  color-scheme: dark;
+
   --c-background: #2E2E2F;
 
   --c-primary-hover: #5dbae9;
