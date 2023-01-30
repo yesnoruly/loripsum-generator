@@ -13,7 +13,7 @@ export const Header = () => {
 
   return (
     <header className={s.header}>
-      <ThemeSwitch handleClick={handleClick} state={dark} />
+      <ThemeSwitch handleClick={handleClick} isDark={dark} />
     </header>
   );
 };
